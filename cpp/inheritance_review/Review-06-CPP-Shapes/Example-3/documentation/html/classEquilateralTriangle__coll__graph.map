@@ -1,0 +1,4 @@
+<map id="EquilateralTriangle" name="EquilateralTriangle">
+<area shape="rect" id="node2" href="$classTriangle.html" title="{Triangle\n|# _side_a\l# _side_b\l# _side_c\l|+ Triangle()\l+ Triangle()\l+ Triangle()\l+ ~Triangle()\l+ sideA()\l+ sideA()\l+ sideB()\l+ sideB()\l+ sideC()\l+ sideC()\l+ area()\l+ perimeter()\l+ clone()\l+ display()\l}" alt="" coords="36,278,132,575"/>
+<area shape="rect" id="node3" href="$classShape.html" title="{Shape\n|# _name\l# WIDTH_LABEL\l# WIDTH_VALUE\l|+ Shape()\l+ Shape()\l+ ~Shape()\l+ name()\l+ area()\l+ perimeter()\l+ clone()\l+ display()\l# name()\l}" alt="" coords="19,5,148,229"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$namespaceutilities.html#a5a4a24938bfeb46f18a7d7ecf96e7b6b" title="utilities::printProjectHeading" alt="" coords="109,101,294,128"/>
+<area shape="rect" id="node3" href="$namespaceutilities.html#a2ca4bf55e15b157fc1255112ecf60b4b" title="utilities::printHorizontalLine" alt="" coords="349,42,528,69"/>
+<area shape="rect" id="node5" href="$namespaceutilities.html#a00ebb5fe3065cdb7f3a0cd6cc1c716e0" title="utilities::printHeading" alt="" coords="129,50,273,77"/>
+<area shape="rect" id="node6" href="$classShapeFactory.html#a8618cdfc6a7320bee3bf96e95e92eaff" title="ShapeFactory::listKnown" alt="" coords="117,152,285,178"/>
+<area shape="rect" id="node7" href="$classShapeFactory.html#a914d40208527df461c103f4045b62e42" title="ShapeFactory::numberKnown" alt="" coords="104,202,299,229"/>
+<area shape="rect" id="node8" href="$runShapes_8cpp.html#a0223e658d108bc16bce442b4c24ad7e5" title="readShapes" alt="" coords="156,253,247,280"/>
+<area shape="rect" id="node10" href="$runShapes_8cpp.html#aef0dfe19adea7d9d7c1897b5e3ce17a1" title="printShapes" alt="" coords="156,304,247,330"/>
+<area shape="rect" id="node11" href="$runShapes_8cpp.html#a4737fcffcbcaf6725cf27c3164956c6e" title="printShapeNames" alt="" coords="138,354,265,381"/>
+<area shape="rect" id="node12" href="$runShapes_8cpp.html#a56ace7b820ff2d48ed84ee2c8cff612c" title="findLargestShapeByArea" alt="" coords="118,405,285,432"/>
+<area shape="rect" id="node4" href="$namespaceutilities.html#a0364030fce3431e2ec985b20e571ce9a" title="utilities::printCentered\lTitle" alt="" coords="364,94,513,135"/>
+<area shape="rect" id="node9" href="$classShapeCollection.html#a9cc32d77abe0e9016fd0d6fed7668bb1" title="ShapeCollection::addShape" alt="" coords="347,253,530,280"/>
+<area shape="rect" id="node13" href="$classShapeCollection.html#ad0837fd1ccb1038889619803453635be" title="ShapeCollection::begin" alt="" coords="361,430,517,457"/>
+<area shape="rect" id="node14" href="$classShapeCollection.html#a480b41c733e2a87ac2a3b0088f00d19d" title="ShapeCollection::end" alt="" coords="365,380,512,406"/>
+</map>

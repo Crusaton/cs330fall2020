@@ -1,0 +1,4 @@
+<map id="ShapeFactory" name="ShapeFactory">
+<area shape="rect" id="node2" href="$structShapeFactory_1_1ShapePair.html" title="{ShapeFactory::ShapePair\n|+ _name\l|+ ShapePair()\l+ ShapePair()\l+ ~ShapePair()\l}" alt="" coords="5,309,176,416"/>
+<area shape="rect" id="node3" href="$classShape.html" title="{Shape\n|# _name\l# WIDTH_LABEL\l# WIDTH_VALUE\l|+ Shape()\l+ Shape()\l+ ~Shape()\l+ name()\l+ area()\l+ perimeter()\l+ clone()\l+ display()\l+ read()\l# name()\l}" alt="" coords="26,6,155,245"/>
+</map>

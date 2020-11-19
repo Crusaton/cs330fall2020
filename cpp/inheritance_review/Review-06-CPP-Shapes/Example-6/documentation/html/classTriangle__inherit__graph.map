@@ -1,0 +1,5 @@
+<map id="Triangle" name="Triangle">
+<area shape="rect" id="node3" href="$classEquilateralTriangle.html" title="{EquilateralTriangle\n|&#45; ROOT_3_DIV_4\l|+ EquilateralTriangle()\l+ EquilateralTriangle()\l+ EquilateralTriangle()\l+ ~EquilateralTriangle()\l+ height()\l+ side()\l+ side()\l+ area()\l+ clone()\l+ display()\l+ read()\l}" alt="" coords="5,676,163,900"/>
+<area shape="rect" id="node4" href="$classRightTriangle.html" title="{RightTriangle\n|&#45; ONE_HALF\l|+ RightTriangle()\l+ RightTriangle()\l+ RightTriangle()\l+ ~RightTriangle()\l+ base()\l+ base()\l+ height()\l+ height()\l+ hypotenuse()\l+ area()\l+ clone()\l+ display()\l+ read()\l&#45; computeHypotenuse()\l}" alt="" coords="187,654,345,922"/>
+<area shape="rect" id="node2" href="$classShape.html" title="{Shape\n|# _name\l# WIDTH_LABEL\l# WIDTH_VALUE\l|+ Shape()\l+ Shape()\l+ ~Shape()\l+ name()\l+ area()\l+ perimeter()\l+ clone()\l+ display()\l+ read()\l# name()\l}" alt="" coords="110,6,239,245"/>
+</map>

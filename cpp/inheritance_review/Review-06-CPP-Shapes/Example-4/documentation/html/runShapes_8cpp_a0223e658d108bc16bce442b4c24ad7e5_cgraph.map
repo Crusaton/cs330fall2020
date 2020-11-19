@@ -1,0 +1,5 @@
+<map id="readShapes" name="readShapes">
+<area shape="rect" id="node2" href="$classShapeFactory.html#afa1a55b6b6f30a734ab70a5d83e72d95" title="ShapeFactory::createShape" alt="" coords="144,5,328,32"/>
+<area shape="rect" id="node4" href="$classShapeCollection.html#a9cc32d77abe0e9016fd0d6fed7668bb1" title="ShapeCollection::addShape" alt="" coords="145,56,327,83"/>
+<area shape="rect" id="node3" href="$classShape.html#a9925268873803b18244ccb79599425fd" title="Shape::clone" alt="" coords="376,5,475,32"/>
+</map>

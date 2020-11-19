@@ -1,0 +1,23 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$namespaceutilities.html#a5a4a24938bfeb46f18a7d7ecf96e7b6b" title="utilities::printProjectHeading" alt="" coords="105,67,290,93"/>
+<area shape="rect" id="node3" href="$namespaceutilities.html#a2ca4bf55e15b157fc1255112ecf60b4b" title="utilities::printHorizontalLine" alt="" coords="339,9,517,36"/>
+<area shape="rect" id="node5" href="$namespaceutilities.html#a7e1ede519f535f5c1f9969fb1b17a66a" title="utilities::printSeperated\lHeading" alt="" coords="120,118,275,159"/>
+<area shape="rect" id="node6" href="$classRightTriangle.html#ae42f3859389838c9d55a2d2842cd56f5" title="RightTriangle::display" alt="" coords="123,228,271,255"/>
+<area shape="rect" id="node12" href="$classTriangle.html#a1bcd69888ccc2db4ed6fc74a92e87ff3" title="Triangle::display" alt="" coords="139,481,256,508"/>
+<area shape="rect" id="node13" href="$classShape.html#a614686977967fae752625a7d89bbdce9" title="Shape::display" alt="" coords="374,380,482,407"/>
+<area shape="rect" id="node19" href="$classEquilateralTriangle.html#adb2c41e64ab7af04f171ce72f47fffe3" title="EquilateralTriangle\l::display" alt="" coords="133,727,262,769"/>
+<area shape="rect" id="node4" href="$namespaceutilities.html#a0364030fce3431e2ec985b20e571ce9a" title="utilities::printCentered\lTitle" alt="" coords="353,61,503,102"/>
+<area shape="rect" id="node7" href="$classRightTriangle.html#abab1317e02e26fa0456f5cfeafe5f9ec" title="RightTriangle::base" alt="" coords="361,127,495,153"/>
+<area shape="rect" id="node8" href="$classRightTriangle.html#a1d861752e9f41d3544c359927bac5603" title="RightTriangle::height" alt="" coords="357,228,499,255"/>
+<area shape="rect" id="node9" href="$classRightTriangle.html#a3a5e2a101cb80081ec788fdae8b2b181" title="RightTriangle::hypotenuse" alt="" coords="341,279,515,305"/>
+<area shape="rect" id="node10" href="$classTriangle.html#a864f7a8224290b17d06e462712a83732" title="Triangle::perimeter" alt="" coords="565,631,696,657"/>
+<area shape="rect" id="node11" href="$classRightTriangle.html#a1092d8c0d647e1cc583e2e0d1c349498" title="RightTriangle::area" alt="" coords="362,329,494,356"/>
+<area shape="rect" id="node15" href="$classTriangle.html#abbcfdb4dc6d1a68b8ea513c95617e1bf" title="Triangle::sideA" alt="" coords="576,519,685,545"/>
+<area shape="rect" id="node16" href="$classTriangle.html#a7dcb91647c0245980970998bcaaf34cf" title="Triangle::sideB" alt="" coords="576,443,685,469"/>
+<area shape="rect" id="node17" href="$classTriangle.html#a49ea69d999bd5dc233ced7df5bd887a6" title="Triangle::sideC" alt="" coords="575,576,686,603"/>
+<area shape="rect" id="node18" href="$classTriangle.html#aa74ed09360f28cdbf3aad374d97311e7" title="Triangle::area" alt="" coords="377,532,479,559"/>
+<area shape="rect" id="node14" href="$classShape.html#ab0219a5934793fa9e4c9f8ff7426be88" title="Shape::name" alt="" coords="581,380,680,407"/>
+<area shape="rect" id="node20" href="$classEquilateralTriangle.html#aae64ee91451823677b74b04508c72b5a" title="EquilateralTriangle\l::side" alt="" coords="566,786,695,827"/>
+<area shape="rect" id="node21" href="$classEquilateralTriangle.html#aeb9166557fb87fc187e534337191cc4f" title="EquilateralTriangle\l::height" alt="" coords="363,786,493,827"/>
+<area shape="rect" id="node22" href="$classEquilateralTriangle.html#acd770baf66a470218191c25c89246d0c" title="EquilateralTriangle\l::area" alt="" coords="363,851,493,893"/>
+</map>

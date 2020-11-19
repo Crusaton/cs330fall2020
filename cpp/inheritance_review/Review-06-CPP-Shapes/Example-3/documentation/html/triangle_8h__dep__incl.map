@@ -1,0 +1,10 @@
+<map id="triangle.h" name="triangle.h">
+<area shape="rect" id="node2" href="$equilateralTriangle_8h.html" title="equilateralTriangle.h" alt="" coords="61,80,200,107"/>
+<area shape="rect" id="node4" href="$shapeFactory_8h.html" title="shapeFactory.h" alt="" coords="181,155,292,181"/>
+<area shape="rect" id="node7" href="$rightTriangle_8h.html" title="rightTriangle.h" alt="" coords="275,80,379,107"/>
+<area shape="rect" id="node9" href="$triangle_8cpp.html" title="triangle.cpp" alt="" coords="403,80,492,107"/>
+<area shape="rect" id="node3" href="$equilateralTriangle_8cpp.html" title="equilateralTriangle.cpp" alt="" coords="5,155,157,181"/>
+<area shape="rect" id="node5" href="$runShapes_8cpp.html" title="runShapes.cpp" alt="" coords="111,229,220,256"/>
+<area shape="rect" id="node6" href="$shapeFactory_8cpp.html" title="shapeFactory.cpp" alt="" coords="245,229,371,256"/>
+<area shape="rect" id="node8" href="$rightTriangle_8cpp.html" title="rightTriangle.cpp" alt="" coords="317,155,435,181"/>
+</map>

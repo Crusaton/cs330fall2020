@@ -1,0 +1,7 @@
+<map id="RightTriangle::display" name="RightTriangle::display">
+<area shape="rect" id="node2" href="$classRightTriangle.html#abab1317e02e26fa0456f5cfeafe5f9ec" title="RightTriangle::base" alt="" coords="223,5,358,32"/>
+<area shape="rect" id="node3" href="$classRightTriangle.html#a1d861752e9f41d3544c359927bac5603" title="RightTriangle::height" alt="" coords="219,56,362,83"/>
+<area shape="rect" id="node4" href="$classRightTriangle.html#a3a5e2a101cb80081ec788fdae8b2b181" title="RightTriangle::hypotenuse" alt="" coords="203,107,378,133"/>
+<area shape="rect" id="node5" href="$classTriangle.html#a864f7a8224290b17d06e462712a83732" title="Triangle::perimeter" alt="" coords="225,157,356,184"/>
+<area shape="rect" id="node6" href="$classRightTriangle.html#a1092d8c0d647e1cc583e2e0d1c349498" title="RightTriangle::area" alt="" coords="225,208,357,235"/>
+</map>

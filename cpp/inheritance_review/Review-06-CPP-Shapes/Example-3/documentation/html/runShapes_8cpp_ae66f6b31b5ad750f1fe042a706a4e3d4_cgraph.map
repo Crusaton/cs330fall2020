@@ -1,0 +1,11 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$namespaceutilities.html#a5a4a24938bfeb46f18a7d7ecf96e7b6b" title="utilities::printProjectHeading" alt="" coords="109,97,294,124"/>
+<area shape="rect" id="node3" href="$namespaceutilities.html#a2ca4bf55e15b157fc1255112ecf60b4b" title="utilities::printHorizontalLine" alt="" coords="347,39,525,65"/>
+<area shape="rect" id="node5" href="$namespaceutilities.html#a00ebb5fe3065cdb7f3a0cd6cc1c716e0" title="utilities::printHeading" alt="" coords="129,47,273,73"/>
+<area shape="rect" id="node6" href="$classShapeFactory.html#a8618cdfc6a7320bee3bf96e95e92eaff" title="ShapeFactory::listKnown" alt="" coords="117,148,285,175"/>
+<area shape="rect" id="node7" href="$classShapeFactory.html#a914d40208527df461c103f4045b62e42" title="ShapeFactory::numberKnown" alt="" coords="104,199,299,225"/>
+<area shape="rect" id="node8" href="$classShapeCollection.html#a9cc32d77abe0e9016fd0d6fed7668bb1" title="ShapeCollection::addShape" alt="" coords="110,249,293,276"/>
+<area shape="rect" id="node9" href="$classShapeFactory.html#afa1a55b6b6f30a734ab70a5d83e72d95" title="ShapeFactory::createShape" alt="" coords="109,300,293,327"/>
+<area shape="rect" id="node4" href="$namespaceutilities.html#a0364030fce3431e2ec985b20e571ce9a" title="utilities::printCentered\lTitle" alt="" coords="361,90,511,131"/>
+<area shape="rect" id="node10" href="$classShape.html#a9925268873803b18244ccb79599425fd" title="Shape::clone" alt="" coords="387,300,485,327"/>
+</map>

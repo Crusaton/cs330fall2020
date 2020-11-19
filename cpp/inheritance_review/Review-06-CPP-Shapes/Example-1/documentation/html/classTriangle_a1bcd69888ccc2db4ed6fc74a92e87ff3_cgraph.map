@@ -1,0 +1,9 @@
+<map id="Triangle::display" name="Triangle::display">
+<area shape="rect" id="node2" href="$classShape.html#a614686977967fae752625a7d89bbdce9" title="Shape::display" alt="" coords="171,5,279,32"/>
+<area shape="rect" id="node4" href="$classTriangle.html#abbcfdb4dc6d1a68b8ea513c95617e1bf" title="Triangle::sideA" alt="" coords="339,81,448,108"/>
+<area shape="rect" id="node5" href="$classTriangle.html#a7dcb91647c0245980970998bcaaf34cf" title="Triangle::sideB" alt="" coords="339,139,448,165"/>
+<area shape="rect" id="node6" href="$classTriangle.html#a49ea69d999bd5dc233ced7df5bd887a6" title="Triangle::sideC" alt="" coords="338,201,449,228"/>
+<area shape="rect" id="node7" href="$classTriangle.html#a864f7a8224290b17d06e462712a83732" title="Triangle::perimeter" alt="" coords="328,252,459,279"/>
+<area shape="rect" id="node8" href="$classTriangle.html#aa74ed09360f28cdbf3aad374d97311e7" title="Triangle::area" alt="" coords="175,157,276,184"/>
+<area shape="rect" id="node3" href="$classShape.html#ab0219a5934793fa9e4c9f8ff7426be88" title="Shape::name" alt="" coords="344,5,443,32"/>
+</map>
