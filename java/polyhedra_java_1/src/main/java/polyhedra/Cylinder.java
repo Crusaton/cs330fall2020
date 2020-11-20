@@ -69,6 +69,7 @@ public class Cylinder extends Polyhedron {
     public void setRadius(double r)
     {
         // Implement this function
+        this.radius = r;
     }
 
     /**
@@ -79,6 +80,7 @@ public class Cylinder extends Polyhedron {
     public void setHeight(double h)
     {
         // Implement this function
+        this.height = h;
     }
 
     /**
