@@ -44,9 +44,13 @@ public class Composite extends Polyhedron
         super("Composite");
 
         allPolyhedra = new Vector<Polyhedron>();
+        int origPolyHedrasize = src.allPolyhedra.size();
 
-        allPolyhedra.addAll(src.allPolyhedra);
-
+        for(int i = 0; i < origPolyHedrasize; i++)
+        {
+            Polyhedron poly = src.allPolyhedra.get(i).clone();
+            this.allPolyhedra.add(poly);
+        }
         this.boundingBox.merge(src.getBoundingBox());
     }
 
@@ -60,7 +64,7 @@ public class Composite extends Polyhedron
     public void add(Polyhedron toAdd)
     {
         Polyhedron poly = toAdd.clone();
-        allPolyhedra.add(poly);
+        this.allPolyhedra.add(poly);
         this.boundingBox.merge(poly.getBoundingBox());
     }
 
@@ -96,7 +100,7 @@ public class Composite extends Polyhedron
      */
     public void scale(double scalingFactor)
     {
-        for(Iterator<Polyhedron> iter = allPolyhedra.iterator(); iter.hasNext(); )
+        for(Iterator<Polyhedron> iter = this.allPolyhedra.iterator(); iter.hasNext(); )
         {
             Polyhedron poly = iter.next();
             poly.scale(scalingFactor);
