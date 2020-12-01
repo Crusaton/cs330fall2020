@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="polyhedra.TestComposite" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-12-01T22:15:48" hostname="skunkworks" time="0.012">
+<testsuite name="polyhedra.TestComposite" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-12-01T22:58:43" hostname="skunkworks" time="0.012">
   <properties/>
-  <testcase name="testAdd" classname="polyhedra.TestComposite" time="0.001"/>
+  <testcase name="testAdd" classname="polyhedra.TestComposite" time="0.0"/>
   <testcase name="testClone" classname="polyhedra.TestComposite" time="0.001"/>
   <testcase name="testDefaultConstructor" classname="polyhedra.TestComposite" time="0.0"/>
-  <testcase name="testRead" classname="polyhedra.TestComposite" time="0.006"/>
+  <testcase name="testRead" classname="polyhedra.TestComposite" time="0.008"/>
   <testcase name="testScale" classname="polyhedra.TestComposite" time="0.0"/>
-  <testcase name="testToStringAfterScale" classname="polyhedra.TestComposite" time="0.002"/>
+  <testcase name="testToStringAfterScale" classname="polyhedra.TestComposite" time="0.001"/>
   <testcase name="testToStringNoScale" classname="polyhedra.TestComposite" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

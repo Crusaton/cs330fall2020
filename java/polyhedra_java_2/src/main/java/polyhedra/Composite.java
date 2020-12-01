@@ -42,14 +42,11 @@ public class Composite extends Polyhedron
     public Composite(Composite src)
     {
         super("Composite");
-
-        allPolyhedra = new Vector<Polyhedron>();
-        int origPolyHedrasize = src.allPolyhedra.size();
-
-        for(int i = 0; i < origPolyHedrasize; i++)
+        allPolyhedra = new Vector<Polyhedron>(src.allPolyhedra.size());
+        
+        for(Polyhedron p: src.allPolyhedra)
         {
-            Polyhedron poly = src.allPolyhedra.get(i).clone();
-            this.allPolyhedra.add(poly);
+            allPolyhedra.add((Polyhedron)p.clone());
         }
         this.boundingBox.merge(src.getBoundingBox());
     }
