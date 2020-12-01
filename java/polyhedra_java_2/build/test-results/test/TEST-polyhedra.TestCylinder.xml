@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="polyhedra.TestCylinder" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-12-01T04:44:06" hostname="skunkworks" time="0.031">
+<testsuite name="polyhedra.TestCylinder" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-12-01T20:53:47" hostname="skunkworks" time="0.009">
   <properties/>
-  <testcase name="testClone" classname="polyhedra.TestCylinder" time="0.012"/>
+  <testcase name="testClone" classname="polyhedra.TestCylinder" time="0.0"/>
   <testcase name="testDefaultConstructor" classname="polyhedra.TestCylinder" time="0.0"/>
-  <testcase name="testNonDefaultConstructor" classname="polyhedra.TestCylinder" time="0.0"/>
-  <testcase name="testRead" classname="polyhedra.TestCylinder" time="0.009"/>
+  <testcase name="testNonDefaultConstructor" classname="polyhedra.TestCylinder" time="0.001"/>
+  <testcase name="testRead" classname="polyhedra.TestCylinder" time="0.003"/>
   <testcase name="testScale" classname="polyhedra.TestCylinder" time="0.0"/>
-  <testcase name="testSetHeight" classname="polyhedra.TestCylinder" time="0.001"/>
+  <testcase name="testSetHeight" classname="polyhedra.TestCylinder" time="0.0"/>
   <testcase name="testSetRadius" classname="polyhedra.TestCylinder" time="0.0"/>
-  <testcase name="testToStringAfterScale" classname="polyhedra.TestCylinder" time="0.005"/>
-  <testcase name="testToStringConstructor" classname="polyhedra.TestCylinder" time="0.001"/>
+  <testcase name="testToStringAfterScale" classname="polyhedra.TestCylinder" time="0.002"/>
+  <testcase name="testToStringConstructor" classname="polyhedra.TestCylinder" time="0.0"/>
   <testcase name="testToStringDefaultConstructor" classname="polyhedra.TestCylinder" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

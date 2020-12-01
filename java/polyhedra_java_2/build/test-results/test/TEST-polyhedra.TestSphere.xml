@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="polyhedra.TestSphere" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-12-01T04:44:06" hostname="skunkworks" time="0.007">
+<testsuite name="polyhedra.TestSphere" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-12-01T20:53:47" hostname="skunkworks" time="0.005">
   <properties/>
   <testcase name="testClone" classname="polyhedra.TestSphere" time="0.0"/>
   <testcase name="testDefaultConstructor" classname="polyhedra.TestSphere" time="0.0"/>
   <testcase name="testNonDefaultConstructor" classname="polyhedra.TestSphere" time="0.0"/>
-  <testcase name="testRead" classname="polyhedra.TestSphere" time="0.005"/>
+  <testcase name="testRead" classname="polyhedra.TestSphere" time="0.002"/>
   <testcase name="testScale" classname="polyhedra.TestSphere" time="0.0"/>
   <testcase name="testSetRadius" classname="polyhedra.TestSphere" time="0.0"/>
-  <testcase name="testToStringAfterScale" classname="polyhedra.TestSphere" time="0.001"/>
+  <testcase name="testToStringAfterScale" classname="polyhedra.TestSphere" time="0.0"/>
   <testcase name="testToStringConstructor" classname="polyhedra.TestSphere" time="0.0"/>
   <testcase name="testToStringDefaultConstructor" classname="polyhedra.TestSphere" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

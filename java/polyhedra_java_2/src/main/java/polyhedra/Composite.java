@@ -3,6 +3,7 @@ package polyhedra;
 import java.util.Scanner;
 import java.util.List;
 import java.util.Vector;
+import java.util.Collection;
 import java.util.Iterator;
 
 /**
@@ -44,6 +45,9 @@ public class Composite extends Polyhedron
 
         allPolyhedra = new Vector<Polyhedron>();
 
+        allPolyhedra.addAll(src.allPolyhedra);
+
+        this.boundingBox.merge(src.getBoundingBox());
     }
 
     /**
@@ -55,7 +59,9 @@ public class Composite extends Polyhedron
      */
     public void add(Polyhedron toAdd)
     {
-        allPolyhedra.add(toAdd);
+        Polyhedron poly = toAdd.clone();
+        allPolyhedra.add(poly);
+        this.boundingBox.merge(poly.getBoundingBox());
     }
 
     /**
@@ -67,7 +73,17 @@ public class Composite extends Polyhedron
      */
     public void read(Scanner scanner)
     {
+        int numPolyhedra;
+        numPolyhedra = scanner.nextInt();
+        
+        for(int i = 0; i < numPolyhedra; i++)
+        {
+            Polyhedron poly = PolyhedronFactory.createAndRead(scanner);
+            this.allPolyhedra.add(poly);
 
+            this.boundingBox.merge(poly.getBoundingBox());
+        }
+        
     }
 
     /**
@@ -80,7 +96,12 @@ public class Composite extends Polyhedron
      */
     public void scale(double scalingFactor)
     {
-
+        for(Iterator<Polyhedron> iter = allPolyhedra.iterator(); iter.hasNext(); )
+        {
+            Polyhedron poly = iter.next();
+            poly.scale(scalingFactor);
+        }
+        this.boundingBox.scale(scalingFactor);
     }
 
     /**
@@ -115,8 +136,17 @@ public class Composite extends Polyhedron
     @Override
     public String toString()
     {
+        StringBuilder bld = new StringBuilder();
 
-        return "Composite.toString not implemented";
+        bld.append(super.toString());
+        bld.append(this.size() + " polyhedra" + "\n");
+
+        for(Polyhedron poly : this.allPolyhedra)
+        {
+            bld.append("  " + poly.toString() + "\n");
+        }
+        
+        return bld.toString();
     }
 }
 
