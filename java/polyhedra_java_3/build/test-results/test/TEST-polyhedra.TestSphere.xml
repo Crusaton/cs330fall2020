@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="polyhedra.TestSphere" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-12-06T05:32:08" hostname="skunkworks" time="0.005">
+  <properties/>
+  <testcase name="testClone" classname="polyhedra.TestSphere" time="0.001"/>
+  <testcase name="testDefaultConstructor" classname="polyhedra.TestSphere" time="0.0"/>
+  <testcase name="testEquals" classname="polyhedra.TestSphere" time="0.0"/>
+  <testcase name="testEqualsDifferentClass" classname="polyhedra.TestSphere" time="0.0"/>
+  <testcase name="testFromDimensions" classname="polyhedra.TestSphere" time="0.0"/>
+  <testcase name="testHashCode" classname="polyhedra.TestSphere" time="0.0"/>
+  <testcase name="testNonDefaultConstructor" classname="polyhedra.TestSphere" time="0.0"/>
+  <testcase name="testScale" classname="polyhedra.TestSphere" time="0.001"/>
+  <testcase name="testSetRadius" classname="polyhedra.TestSphere" time="0.0"/>
+  <testcase name="testToStringAfterScale" classname="polyhedra.TestSphere" time="0.001"/>
+  <testcase name="testToStringConstructor" classname="polyhedra.TestSphere" time="0.0"/>
+  <testcase name="testToStringDefaultConstructor" classname="polyhedra.TestSphere" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
