@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Point.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">polyhedra_java_3</a> &gt; <a href="index.source.html" class="el_package">polyhedra</a> &gt; <span class="el_source">Point.java</span></div><h1>Point.java</h1><pre class="source lang-java linenums">package polyhedra;
+
+/**
+ * Coordinate in 3 dimensional Cartesian space.
+ */
+public class Point implements Cloneable {
+    /**
+     * Default tolerance for point component equality.
+     */
+    public static final double EQ_THRESHOLD = 0.01;
+
+    public double x;
+    public double y;
+    public double z;
+
+    /**
+     * Compare two doubles for equality within a specified threshold.
+     *
+     * @param lhs first floating point number
+     * @param rhs second floating point number
+     * @param threshold amount by which two numbers are allowed to differ and
+     *     still be considered equal
+     *
+     * @return true if the x, y, and z components of both points are equal
+     *     within the specified threshold.
+     */
+    public static boolean equalWithinThreshold(final double lhs,
+                                               final double rhs,
+                                               final double threshold)
+    {
+<span class="pc bpc" id="L31" title="1 of 2 branches missed.">        return Math.abs(rhs - lhs) &lt;= threshold;</span>
+    }
+
+    /**
+     * Compare two doubles for equality within a default threshold specified by
+     * {@code Point.EQ_THRESHOLD}.
+     *
+     * @param lhs first floating point number
+     * @param rhs second floating point number
+     *
+     * @return true if the x, y, and z components of both points are equal
+     *     within the specified threshold.
+     */
+    public static boolean equalWithinDftThreshold(final double lhs,
+                                               final double rhs)
+    {
+<span class="fc bfc" id="L47" title="All 2 branches covered.">        return Math.abs(rhs - lhs) &lt;= Point.EQ_THRESHOLD;</span>
+    }
+
+    /**
+     * Default Point Constructor.
+     */
+    public Point()
+    {
+<span class="fc" id="L55">        this(0, 0, 0);</span>
+<span class="fc" id="L56">    }</span>
+
+    /**
+     * Construct a Point from specified x, y, and z values.
+     *
+     * @param dx desired x value
+     * @param dy desired y value
+     * @param dz desired z value
+     */
+    public Point(final double dx, final double dy, final double dz)
+<span class="fc" id="L66">    {</span>
+<span class="fc" id="L67">        this.x = dx;</span>
+<span class="fc" id="L68">        this.y = dy;</span>
+<span class="fc" id="L69">        this.z = dz;</span>
+<span class="fc" id="L70">    }</span>
+
+    /**
+     * Apply geometric scaling function.
+     *
+     * @param scalingFactor the scaling factor
+     */
+    public void scale(final double scalingFactor)
+    {
+<span class="nc" id="L79">        x *= scalingFactor;</span>
+<span class="nc" id="L80">        y *= scalingFactor;</span>
+<span class="nc" id="L81">        z *= scalingFactor;</span>
+<span class="nc" id="L82">    }</span>
+
+    @Override
+    public boolean equals(Object rhs)
+    {
+<span class="pc bpc" id="L87" title="1 of 2 branches missed.">        if (!(rhs instanceof Point)) {</span>
+<span class="nc" id="L88">            return false;</span>
+        }
+
+<span class="fc" id="L91">        final Point rhsP = (Point) rhs;</span>
+
+<span class="pc bpc" id="L93" title="1 of 2 branches missed.">        if (!equalWithinThreshold(this.x, rhsP.x, EQ_THRESHOLD)) {</span>
+<span class="nc" id="L94">            return false;</span>
+        }
+
+<span class="pc bpc" id="L97" title="1 of 2 branches missed.">        if (!equalWithinThreshold(this.y, rhsP.y, EQ_THRESHOLD)) {</span>
+<span class="nc" id="L98">            return false;</span>
+        }
+
+<span class="fc" id="L101">        return equalWithinThreshold(this.z, rhsP.z, EQ_THRESHOLD);</span>
+    }
+
+    @Override
+    public int hashCode()
+    {
+<span class="nc" id="L107">        return (int) x</span>
+             + (int) y
+             + (int) z;
+    }
+
+    @Override
+    public Point clone()
+    {
+<span class="nc" id="L115">        return new Point(this.x, this.y, this.z);</span>
+    }
+
+    @Override
+    public String toString()
+    {
+<span class="fc" id="L121">        return &quot;(&quot; + x + &quot;, &quot; + y + &quot;, &quot; + z + &quot;)&quot;;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

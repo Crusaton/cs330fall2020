@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>SpotBugs Report</title>
+        <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+
+		.tablerow0:hover, .tablerow1:hover {
+			background: #aaffaa;
+		}
+
+		.priority-1 {
+		    color: red;
+		    font-weight: bold;
+		}
+		.priority-2 {
+		    color: orange;
+		    font-weight: bold;
+		}
+		.priority-3 {
+		    color: green;
+		    font-weight: bold;
+		}
+		.priority-4 {
+		    color: blue;
+		    font-weight: bold;
+		}
+		</style>
+        <script type="text/javascript">
+			function toggleRow(elid) {
+				if (document.getElementById) {
+					element = document.getElementById(elid);
+					if (element) {
+						if (element.style.display == 'none') {
+							element.style.display = 'block';
+							//window.status = 'Toggle on!';
+						} else {
+							element.style.display = 'none';
+							//window.status = 'Toggle off!';
+						}
+					}
+				}
+			}
+		</script>
+    </head>
+    <body>
+        <h1>
+            <a href="https://spotbugs.github.io/">SpotBugs</a>
+             Report
+        </h1>
+        <h2>Project Information</h2>
+        <p>Project: 
+		root project 'polyhedra_java_3' (main)</p>
+        <p>SpotBugs version: 3.1.12</p>
+        <p>Code analyzed:</p>
+        <ul>
+            <li>/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/classes/java/main/polyhedra/BoundingBox.class</li>
+            <li>/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/classes/java/main/polyhedra/Cylinder.class</li>
+            <li>/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/classes/java/main/polyhedra/PolyhedronFactory.class</li>
+            <li>/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/classes/java/main/polyhedra/TraitFromDimensions.class</li>
+            <li>/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/classes/java/main/polyhedra/CreatePolyhedra.class</li>
+            <li>/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/classes/java/main/polyhedra/Polyhedron.class</li>
+            <li>/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/classes/java/main/polyhedra/Point.class</li>
+            <li>/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/classes/java/main/polyhedra/Composite.class</li>
+            <li>/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/classes/java/main/polyhedra/Sphere.class</li>
+            <li>/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/classes/java/main/polyhedra/io/PolyhedronReader.class</li>
+        </ul>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>Metrics</h2>
+        <p>375 lines of code analyzed,
+	in 10 classes, 
+	in 2 packages.</p>
+        <table width="500" cellpadding="5" cellspacing="2">
+            <tr class="tableheader">
+                <th align="left">Metric</th>
+                <th align="right">Total</th>
+                <th align="right">Density*</th>
+            </tr>
+            <tr class="tablerow0">
+                <td>High Priority Warnings</td>
+                <td align="right">1</td>
+                <td align="right">2.67</td>
+            </tr>
+            <tr class="tablerow1">
+                <td>Medium Priority Warnings</td>
+                <td align="right">5</td>
+                <td align="right">13.33</td>
+            </tr>
+            <tr class="$totalClass">
+                <td>
+                    <b>Total Warnings</b>
+                </td>
+                <td align="right">
+                    <b>6</b>
+                </td>
+                <td align="right">
+                    <b>16.00</b>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+        </p>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>Contents</h2>
+        <ul>
+            <li>
+                <a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+            </li>
+            <li>
+                <a href="#Warnings_I18N">Internationalization Warnings</a>
+            </li>
+            <li>
+                <a href="#Details">Details</a>
+            </li>
+        </ul>
+        <h1>Summary</h1>
+        <table width="500" cellpadding="5" cellspacing="2">
+            <tr class="tableheader">
+                <th align="left">Warning Type</th>
+                <th align="right">Number</th>
+            </tr>
+            <tr class="tablerow0">
+                <td>
+                    <a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+                </td>
+                <td align="right">5</td>
+            </tr>
+            <tr class="tablerow1">
+                <td>
+                    <a href="#Warnings_I18N">Internationalization Warnings</a>
+                </td>
+                <td align="right">1</td>
+            </tr>
+            <tr class="tablerow0">
+                <td>
+                    <b>Total</b>
+                </td>
+                <td align="right">
+                    <b>6</b>
+                </td>
+            </tr>
+        </table>
+        <h1>Warnings</h1>
+        <p>Click on a warning row to see full context information.</p>
+        <h2>
+            <a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="0">
+            <tr class="tableheader">
+                <th align="left">Code</th>
+                <th align="left">Warning</th>
+            </tr>
+            <tr class="tablerow1" onclick="toggleRow('N65596');">
+                <td>
+                    <span class="priority-2">CN</span>
+                </td>
+                <td>polyhedra.BoundingBox.clone() does not call super.clone()</td>
+            </tr>
+            <tr class="detailrow1">
+                <td />
+                <td>
+                    <p id="N65596" style="display: none;">
+                        <a href="#CN_IDIOM_NO_SUPER_CALL">Bug type CN_IDIOM_NO_SUPER_CALL (click for details)</a>
+                        <br />
+                        In class polyhedra.BoundingBox
+                        <br />
+                        In method polyhedra.BoundingBox.clone()
+                        <br />
+                        At BoundingBox.java:[line 128]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0" onclick="toggleRow('N65653');">
+                <td>
+                    <span class="priority-2">CN</span>
+                </td>
+                <td>polyhedra.Composite.clone() does not call super.clone()</td>
+            </tr>
+            <tr class="detailrow0">
+                <td />
+                <td>
+                    <p id="N65653" style="display: none;">
+                        <a href="#CN_IDIOM_NO_SUPER_CALL">Bug type CN_IDIOM_NO_SUPER_CALL (click for details)</a>
+                        <br />
+                        In class polyhedra.Composite
+                        <br />
+                        In method polyhedra.Composite.clone()
+                        <br />
+                        At Composite.java:[lines 100-111]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1" onclick="toggleRow('N65782');">
+                <td>
+                    <span class="priority-2">CN</span>
+                </td>
+                <td>polyhedra.Cylinder.clone() does not call super.clone()</td>
+            </tr>
+            <tr class="detailrow1">
+                <td />
+                <td>
+                    <p id="N65782" style="display: none;">
+                        <a href="#CN_IDIOM_NO_SUPER_CALL">Bug type CN_IDIOM_NO_SUPER_CALL (click for details)</a>
+                        <br />
+                        In class polyhedra.Cylinder
+                        <br />
+                        In method polyhedra.Cylinder.clone()
+                        <br />
+                        At Cylinder.java:[line 111]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0" onclick="toggleRow('N65839');">
+                <td>
+                    <span class="priority-2">CN</span>
+                </td>
+                <td>polyhedra.Point.clone() does not call super.clone()</td>
+            </tr>
+            <tr class="detailrow0">
+                <td />
+                <td>
+                    <p id="N65839" style="display: none;">
+                        <a href="#CN_IDIOM_NO_SUPER_CALL">Bug type CN_IDIOM_NO_SUPER_CALL (click for details)</a>
+                        <br />
+                        In class polyhedra.Point
+                        <br />
+                        In method polyhedra.Point.clone()
+                        <br />
+                        At Point.java:[line 115]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1" onclick="toggleRow('N65896');">
+                <td>
+                    <span class="priority-2">CN</span>
+                </td>
+                <td>polyhedra.Sphere.clone() does not call super.clone()</td>
+            </tr>
+            <tr class="detailrow1">
+                <td />
+                <td>
+                    <p id="N65896" style="display: none;">
+                        <a href="#CN_IDIOM_NO_SUPER_CALL">Bug type CN_IDIOM_NO_SUPER_CALL (click for details)</a>
+                        <br />
+                        In class polyhedra.Sphere
+                        <br />
+                        In method polyhedra.Sphere.clone()
+                        <br />
+                        At Sphere.java:[line 85]
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <h2>
+            <a name="Warnings_I18N">Internationalization Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="0">
+            <tr class="tableheader">
+                <th align="left">Code</th>
+                <th align="left">Warning</th>
+            </tr>
+            <tr class="tablerow1" onclick="toggleRow('N65710');">
+                <td>
+                    <span class="priority-1">Dm</span>
+                </td>
+                <td>Found reliance on default encoding in polyhedra.CreatePolyhedra.main(String[]): new java.io.FileReader(String)</td>
+            </tr>
+            <tr class="detailrow1">
+                <td />
+                <td>
+                    <p id="N65710" style="display: none;">
+                        <a href="#DM_DEFAULT_ENCODING">Bug type DM_DEFAULT_ENCODING (click for details)</a>
+                        <br />
+                        In class polyhedra.CreatePolyhedra
+                        <br />
+                        In method polyhedra.CreatePolyhedra.main(String[])
+                        <br />
+                        Called method new java.io.FileReader(String)
+                        <br />
+                        At CreatePolyhedra.java:[line 62]
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <h1>
+            <a name="Details">Details</a>
+        </h1>
+        <h2>
+            <a name="CN_IDIOM_NO_SUPER_CALL">CN_IDIOM_NO_SUPER_CALL: clone method does not call super.clone()</a>
+        </h2>
+        <p> This non-final class defines a clone() method that does not call super.clone().
+If this class ("<i>A</i>") is extended by a subclass ("<i>B</i>"),
+and the subclass <i>B</i> calls super.clone(), then it is likely that
+<i>B</i>'s clone() method will return an object of type <i>A</i>,
+which violates the standard contract for clone().</p>
+
+<p> If all clone() methods call super.clone(), then they are guaranteed
+to use Object.clone(), which always returns an object of the correct type.</p>
+
+    
+        <h2>
+            <a name="DM_DEFAULT_ENCODING">DM_DEFAULT_ENCODING: Reliance on default encoding</a>
+        </h2>
+        <p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      
+    </body>
+</html>

@@ -34,7 +34,6 @@ public class Composite
         this.allPolyhedra = new Vector<Polyhedron>();
         this.theBox = new BoundingBox();
     }
-
     @Override
     public String getType()
     {
@@ -58,6 +57,7 @@ public class Composite
         // Write this function.
         Polyhedron poly = toAdd.clone();
         this.allPolyhedra.add(poly);
+        this.getBoundingBox().merge(poly.getBoundingBox());
     }
 
     /**
@@ -69,6 +69,13 @@ public class Composite
     public void scale(double scalingFactor)
     {
         // Write this function.
+        for(Iterator<Polyhedron> iter = this.allPolyhedra.iterator(); iter.hasNext(); )
+        {
+            Polyhedron poly = iter.next();
+            poly.scale(scalingFactor);
+            this.getBoundingBox().merge(poly.getBoundingBox());
+        }
+
     }
 
     /**
@@ -93,6 +100,13 @@ public class Composite
         Composite aCopy = new Composite();
 
         // A loop might be helpful to 'add' each entry from this.allPolyhedra
+        for(Polyhedron p: this.allPolyhedra)
+        {
+            aCopy.allPolyhedra.add((Polyhedron)p.clone());
+            aCopy.getBoundingBox().merge(p.getBoundingBox());
+        }
+        
+        
 
         return aCopy;
     }
@@ -144,7 +158,7 @@ public class Composite
     public boolean isComplex()
     {
         // Is the return corrrect?
-        return false;
+        return true;
     }
 
     @Override

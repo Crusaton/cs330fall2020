@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Composite.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">polyhedra_java_3</a> &gt; <a href="index.source.html" class="el_package">polyhedra</a> &gt; <span class="el_source">Composite.java</span></div><h1>Composite.java</h1><pre class="source lang-java linenums">package polyhedra;
+
+import java.util.List;
+import java.util.Vector;
+import java.util.Iterator;
+
+/**
+ * A Composite Polyhedron. Polyhedra of this type are built from
+ * other Polyhedra. This,in theory, can include Composite objects
+ * composed of other (nested) Composite objects.
+ *
+ */
+public class Composite
+    implements Polyhedron, Iterable&lt;Polyhedron&gt;
+{
+    /**
+     * Cached (i.e., precomputed and updated) BoundingBox.
+     *
+     * Computing the boundingbox for a Composite Polyhedron is non-trivial
+     * (i.e., requires a loop and has O(n) temperoral complexity).
+     */
+    private BoundingBox theBox;
+
+    /**
+     * Collection of polyhedra of which this composite polyhedron is composed.
+     */
+    private List&lt;Polyhedron&gt; allPolyhedra;
+
+    /**
+     * Default Composite Constructor.
+     */
+    public Composite()
+<span class="fc" id="L33">    {</span>
+<span class="fc" id="L34">        this.allPolyhedra = new Vector&lt;Polyhedron&gt;();</span>
+<span class="fc" id="L35">        this.theBox = new BoundingBox();</span>
+<span class="fc" id="L36">    }</span>
+    @Override
+    public String getType()
+    {
+        // Replace the return line
+<span class="fc" id="L41">        return &quot;Composite&quot;;</span>
+    }
+
+    @Override
+    public BoundingBox getBoundingBox()
+    {
+<span class="fc" id="L47">        return theBox;</span>
+    }
+
+    /**
+     * Add a cloned copy of a Polyhedron to the `Composite` collection.
+     *
+     * @param toAdd is cloned and the copy is added
+     */
+    public void add(Polyhedron toAdd)
+    {
+        // Write this function.
+<span class="fc" id="L58">        Polyhedron poly = toAdd.clone();</span>
+<span class="fc" id="L59">        this.allPolyhedra.add(poly);</span>
+<span class="fc" id="L60">        this.getBoundingBox().merge(poly.getBoundingBox());</span>
+<span class="fc" id="L61">    }</span>
+
+    /**
+     * Iterate through all sub-polyhedra, scale them, and update all
+     * bounding boxes.
+     *
+     * @param scalingFactor scaling factor
+     */
+    public void scale(double scalingFactor)
+    {
+        // Write this function.
+<span class="fc bfc" id="L72" title="All 2 branches covered.">        for(Iterator&lt;Polyhedron&gt; iter = this.allPolyhedra.iterator(); iter.hasNext(); )</span>
+        {
+<span class="fc" id="L74">            Polyhedron poly = iter.next();</span>
+<span class="fc" id="L75">            poly.scale(scalingFactor);</span>
+<span class="fc" id="L76">            this.getBoundingBox().merge(poly.getBoundingBox());</span>
+<span class="fc" id="L77">        }</span>
+
+<span class="fc" id="L79">    }</span>
+
+    /**
+     * Retrive the number of Polyhedra.
+     *
+     * @return the number of Polyhedra that comprise this Composite object
+     */
+    public int size()
+    {
+<span class="fc" id="L88">        return allPolyhedra.size();</span>
+    }
+
+    @Override
+    public Iterator&lt;Polyhedron&gt; iterator()
+    {
+<span class="fc" id="L94">        return allPolyhedra.iterator();</span>
+    }
+
+    @Override
+    public Polyhedron clone()
+    {
+<span class="fc" id="L100">        Composite aCopy = new Composite();</span>
+
+        // A loop might be helpful to 'add' each entry from this.allPolyhedra
+<span class="fc bfc" id="L103" title="All 2 branches covered.">        for(Polyhedron p: this.allPolyhedra)</span>
+        {
+<span class="fc" id="L105">            aCopy.allPolyhedra.add((Polyhedron)p.clone());</span>
+<span class="fc" id="L106">            aCopy.getBoundingBox().merge(p.getBoundingBox());</span>
+<span class="fc" id="L107">        }</span>
+        
+        
+
+<span class="fc" id="L111">        return aCopy;</span>
+    }
+
+    @Override
+    public boolean equals(Object rhs)
+    {
+<span class="fc bfc" id="L117" title="All 2 branches covered.">        if (!(rhs instanceof Composite)) {</span>
+<span class="fc" id="L118">            return false;</span>
+        }
+
+<span class="fc" id="L121">        Composite rhsComp = (Composite) rhs;</span>
+
+        // List.equals compares each pair in order (magic)!
+<span class="fc" id="L124">        return this.allPolyhedra.equals(rhsComp.allPolyhedra);</span>
+    }
+
+    @Override
+    public int hashCode()
+    {
+<span class="fc" id="L130">        return this.getType().hashCode()</span>
+<span class="fc" id="L131">             + this.allPolyhedra.hashCode();</span>
+    }
+
+    /**
+     * &quot;Print&quot; all polyhedra.
+     *
+     * @return String containing all component _Polyhedra_ objects
+     */
+    @Override
+    public String toString()
+    {
+<span class="fc" id="L142">        StringBuilder bld = new StringBuilder();</span>
+
+<span class="fc" id="L144">        bld.append(Polyhedron.super.toStringHelper());</span>
+<span class="fc" id="L145">        bld.append(String.format(&quot;%d polyhedra%n&quot;, this.size()));</span>
+
+        // Maybe a loop can help...
+<span class="fc bfc" id="L148" title="All 2 branches covered.">        for(Polyhedron poly : this.allPolyhedra)</span>
+        {
+<span class="fc" id="L150">            bld.append(&quot;  &quot; + poly.toString() + &quot;\n&quot;);</span>
+<span class="fc" id="L151">        }</span>
+
+<span class="fc" id="L153">        return bld.toString();</span>
+    }
+
+    //--------------------------------------------------------------------------
+    @Override
+    public boolean isComplex()
+    {
+        // Is the return corrrect?
+<span class="fc" id="L161">        return true;</span>
+    }
+
+    @Override
+    public boolean isSimple()
+    {
+        // Is the return corrrect?
+<span class="fc" id="L168">        return false;</span>
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BoundingBox.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">polyhedra_java_3</a> &gt; <a href="index.source.html" class="el_package">polyhedra</a> &gt; <span class="el_source">BoundingBox.java</span></div><h1>BoundingBox.java</h1><pre class="source lang-java linenums">package polyhedra;
+
+/**
+ * Rectangular prism representing the boundaries
+ * x, y, and z of a polyhedron.
+ */
+public class BoundingBox implements Cloneable {
+    /**
+     * Lower boundary. In this exercise, it is
+     * fixed at (0,0,0)
+     */
+    private Point lowerLeftVertex;
+
+    /**
+     * Upper boundary (max(x), max(y), max(z))).
+     */
+    private Point upperRightVertex;
+
+    /**
+     * Default Constructor. Set both vertices to (0, 0, 0)
+     */
+    public BoundingBox()
+    {
+<span class="fc" id="L24">        this(new Point(0, 0, 0), new Point(0, 0, 0));</span>
+<span class="fc" id="L25">    }</span>
+
+    /**
+     * Construct a bounding box from lower and upper
+     * points that define it.
+     *
+     * @param lowerLeft point representing min(x), min(y), min(z)
+     * @param upperRight point representing max(x), max(y), max(z)
+     */
+    public BoundingBox(Point lowerLeft, Point upperRight)
+<span class="fc" id="L35">    {</span>
+<span class="fc" id="L36">        lowerLeftVertex  = lowerLeft;</span>
+<span class="fc" id="L37">        upperRightVertex = upperRight;</span>
+<span class="fc" id="L38">    }</span>
+
+    /**
+     * Construct a bounding box from using the origin (0, 0, 0) as the lower
+     * point and supplied upper (x, y, z).
+     *
+     * @param xUpper x-component of upper point, representing max(x)
+     * @param yUpper y-component of upper point, representing max(y)
+     * @param zUpper z-component of upper point, representing max(z)
+     */
+    public BoundingBox(double xUpper, double yUpper, double zUpper)
+    {
+<span class="fc" id="L50">        this(new Point(), new Point(xUpper, yUpper, zUpper));</span>
+<span class="fc" id="L51">    }</span>
+
+    /**
+     * Retrieve the lower boundary.
+     *
+     * @return lower boundary Point(min(x), min(y), min(z))
+     */
+    public Point getLowerLeftVertex()
+    {
+<span class="fc" id="L60">        return lowerLeftVertex;</span>
+    }
+
+    /**
+     * Retrieve the upper boundary.
+     *
+     * @return lower boundary Point(max(x), max(y), max(z))
+     */
+    public Point getUpperRightVertex()
+    {
+<span class="fc" id="L70">        return upperRightVertex;</span>
+    }
+
+    /**
+     * Set the upper boundary using a Point.
+     *
+     * @param newPoint point representing max(x), max(y), max(z)
+     */
+    public void setUpperRightVertex(Point newPoint)
+    {
+<span class="nc" id="L80">        upperRightVertex = newPoint;</span>
+<span class="nc" id="L81">    }</span>
+
+    /**
+     * Set the upper boundary.
+     *
+     * @param x new max(x)
+     * @param y new max(y)
+     * @param z new max(z)
+     */
+    public void setUpperRightVertex(double x, double y, double z)
+    {
+<span class="nc" id="L92">        upperRightVertex.x = x;</span>
+<span class="nc" id="L93">        upperRightVertex.y = y;</span>
+<span class="nc" id="L94">        upperRightVertex.z = z;</span>
+<span class="nc" id="L95">    }</span>
+
+    /**
+     * Merge two bounding boxes, taking the
+     * largest values for each of x, y, and z.
+     *
+     * @param other bounding box to merge with `this`
+     */
+    public void merge(BoundingBox other)
+    {
+<span class="fc" id="L105">        upperRightVertex.x = Math.max(this.upperRightVertex.x,</span>
+                                      other.upperRightVertex.x);
+
+<span class="fc" id="L108">        upperRightVertex.y = Math.max(this.upperRightVertex.y,</span>
+                                      other.upperRightVertex.y);
+
+<span class="fc" id="L111">        upperRightVertex.z = Math.max(this.upperRightVertex.z,</span>
+                                      other.upperRightVertex.z);
+<span class="fc" id="L113">    }</span>
+
+    /**
+     * Apply a scaling factor.
+     *
+     * @param scalingFactor scaling factor that is greater than or equal to 1
+     */
+    public void scale(double scalingFactor)
+    {
+<span class="nc" id="L122">        upperRightVertex.scale(scalingFactor);</span>
+<span class="nc" id="L123">    }</span>
+
+    @Override
+    public BoundingBox clone()
+    {
+<span class="nc" id="L128">        return new BoundingBox(lowerLeftVertex.clone(),</span>
+<span class="nc" id="L129">                               upperRightVertex.clone());</span>
+    }
+
+    @Override
+    public String toString()
+    {
+<span class="fc" id="L135">        return this.upperRightVertex.toString();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

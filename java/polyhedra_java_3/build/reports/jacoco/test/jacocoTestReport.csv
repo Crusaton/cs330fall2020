@@ -1,0 +1,10 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+polyhedra_java_3,polyhedra.io,PolyhedronReader,3,116,2,14,1,36,2,11,0,5
+polyhedra_java_3,polyhedra,CreatePolyhedra,92,70,4,2,29,12,4,6,2,5
+polyhedra_java_3,polyhedra,Sphere,0,96,0,2,0,26,0,15,0,14
+polyhedra_java_3,polyhedra,BoundingBox,32,77,0,0,10,15,4,7,4,7
+polyhedra_java_3,polyhedra,Cylinder,0,128,0,2,0,33,0,17,0,16
+polyhedra_java_3,polyhedra,PolyhedronFactory,64,48,6,4,9,5,6,4,3,2
+polyhedra_java_3,polyhedra,Point,48,88,4,6,9,15,7,7,3,6
+polyhedra_java_3,polyhedra,Polyhedron,0,27,0,0,0,8,0,4,0,4
+polyhedra_java_3,polyhedra,Composite,0,167,0,8,0,39,0,17,0,13

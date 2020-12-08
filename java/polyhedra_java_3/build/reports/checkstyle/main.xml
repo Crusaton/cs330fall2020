@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.27">
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/BoundingBox.java">
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/Composite.java">
+<error line="72" severity="error" message="Line is longer than 80 characters (found 87)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="72" column="9" severity="error" message="&apos;for&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="72" column="87" severity="error" message="&apos;;&apos; is followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyForIteratorPadCheck"/>
+<error line="103" column="9" severity="error" message="&apos;for&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="105" column="47" severity="error" message="&apos;typecast&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="108" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="109" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="148" column="9" severity="error" message="&apos;for&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/CreatePolyhedra.java">
+<error line="32" column="8" severity="error" message="Unused @param tag for &apos;args[0]&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="33" column="8" severity="error" message="Unused @param tag for &apos;args[1]&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="35" column="38" severity="error" message="Expected @param tag for &apos;args&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="74" severity="error" message="Line is longer than 80 characters (found 84)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="108" severity="error" message="Line is longer than 80 characters (found 86)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/Cylinder.java">
+<error line="127" column="9" severity="error" message="&apos;if&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="130" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/Point.java">
+<error line="12" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="12" column="19" severity="error" message="Variable &apos;x&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="13" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="13" column="19" severity="error" message="Variable &apos;y&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="14" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="14" column="19" severity="error" message="Variable &apos;z&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/Polyhedron.java">
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/PolyhedronFactory.java">
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/Sphere.java">
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/TraitFromDimensions.java">
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/io/PolyhedronReader.java">
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/io/package-info.java">
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/package-info.java">
+</file>
+</checkstyle>

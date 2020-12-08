@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Cylinder.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">polyhedra_java_3</a> &gt; <a href="index.source.html" class="el_package">polyhedra</a> &gt; <span class="el_source">Cylinder.java</span></div><h1>Cylinder.java</h1><pre class="source lang-java linenums">package polyhedra;
+
+/**
+ * Polyhedron representing a cylinder.
+ */
+public class Cylinder
+    implements Polyhedron, TraitFromDimensions
+{
+    /**
+     * Height of the cylinder. It must be &gt; 0.
+     */
+    private double height;
+
+    /**
+     * Radius of the cylinder. It must be &gt; 0.
+     */
+    private double radius;
+
+    /**
+     * Default Constructor - set the radius and height to 1.
+     */
+    public Cylinder()
+    {
+        // Something is missing here...
+<span class="fc" id="L25">        this(1, 1);</span>
+<span class="fc" id="L26">    }</span>
+
+    /**
+     * Construct a cylinder with specified height and radius.
+     *
+     * @param r desired radius
+     * @param h deisred height
+     */
+    public Cylinder(double r, double h)
+<span class="fc" id="L35">    {</span>
+<span class="fc" id="L36">        this.radius = r;</span>
+<span class="fc" id="L37">        this.height = h;</span>
+<span class="fc" id="L38">    }</span>
+
+    @Override
+    public String getType()
+    {
+<span class="fc" id="L43">        return &quot;Cylinder&quot;;</span>
+    }
+
+    @Override
+    public BoundingBox getBoundingBox()
+    {
+        // null is not a bounding box...
+
+<span class="fc" id="L51">        final double h = this.getHeight();</span>
+<span class="fc" id="L52">        final double d = this.getDiameter();</span>
+
+<span class="fc" id="L54">        return new BoundingBox(d, d, h);</span>
+    }
+
+    /**
+     * Retrieve the radius.
+     *
+     * @return current radius
+     */
+    public double getRadius()
+    {
+<span class="fc" id="L64">        return this.radius;</span>
+    }
+
+    /**
+     * Retrieve the height.
+     *
+     * @return current height
+     */
+    public double getHeight()
+    {
+<span class="fc" id="L74">        return this.height;</span>
+    }
+
+    /**
+     * Update the radius.
+     *
+     * @param r desired radius
+     */
+    public void setRadius(double r)
+    {
+<span class="fc" id="L84">        this.radius = r;</span>
+<span class="fc" id="L85">    }</span>
+
+    /**
+     * Update the height.
+     *
+     * @param h deisred height
+     */
+    public void setHeight(double h)
+    {
+<span class="fc" id="L94">        this.height = h;</span>
+<span class="fc" id="L95">    }</span>
+
+    /**
+     * Compute diameter.
+     *
+     * @return diameter
+     */
+    public final double getDiameter()
+    {
+<span class="fc" id="L104">        return this.radius * 2;</span>
+    }
+
+    @Override
+    public Polyhedron clone()
+    {
+        // null is not a Cylinder...
+<span class="fc" id="L111">        return new Cylinder(this.radius, this.height);</span>
+    }
+
+    @Override
+    public void scale(double scalingFactor)
+    {
+        // Where is the scaling logic?
+<span class="fc" id="L118">        radius *= scalingFactor;</span>
+<span class="fc" id="L119">        height *= scalingFactor;</span>
+
+<span class="fc" id="L121">    }</span>
+
+    @Override
+    public boolean equals(Object rhs)
+    {
+        // This is a placeholder...'
+<span class="fc bfc" id="L127" title="All 2 branches covered.">        if(!(rhs instanceof Cylinder)) {</span>
+<span class="fc" id="L128">            return false;</span>
+        }
+        
+<span class="fc" id="L131">        Cylinder rhsCylinder = (Cylinder) rhs;</span>
+
+<span class="fc" id="L133">        return Point.equalWithinDftThreshold(this.radius, rhsCylinder.radius);</span>
+    }
+
+    @Override
+    public int hashCode()
+    {
+        // This is a placeholder...
+<span class="fc" id="L140">        return this.getType().hashCode()</span>
+<span class="fc" id="L141">            + Double.valueOf(this.radius).hashCode()</span>
+<span class="fc" id="L142">            + Double.valueOf(this.height).hashCode();</span>
+    }
+
+    @Override
+    public String toString()
+    {
+<span class="fc" id="L148">        return Polyhedron.super.toStringHelper()</span>
+             + &quot;Radius: &quot; + this.radius + &quot; &quot;
+             + &quot;Height: &quot; + this.height;
+    }
+
+    // TraitFromDimensions Overrides
+    @Override
+    public int numberOfDimensions()
+    {
+        // Zero... I think the Cylinder has more than zero dimensions.
+<span class="fc" id="L158">        return 2;</span>
+    }
+
+    @Override
+    public void fromDimensions(double[] theDims)
+    {
+        // Something is missing...
+<span class="fc" id="L165">        this.radius = theDims[1];</span>
+<span class="fc" id="L166">        this.height = theDims[0];</span>
+<span class="fc" id="L167">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

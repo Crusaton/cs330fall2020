@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PolyhedronReader.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">polyhedra_java_3</a> &gt; <a href="index.source.html" class="el_package">polyhedra.io</a> &gt; <span class="el_source">PolyhedronReader.java</span></div><h1>PolyhedronReader.java</h1><pre class="source lang-java linenums">package polyhedra.io;
+
+import java.io.BufferedReader;
+import java.util.Scanner;
+
+import java.util.List;
+import java.util.ArrayList;
+
+import polyhedra.Composite;
+import polyhedra.Polyhedron;
+import polyhedra.PolyhedronFactory;
+import polyhedra.TraitFromDimensions;
+
+/**
+ * The PolyhedronReader class handles all high level Polyhedron input logic.
+ */
+public final class PolyhedronReader
+{
+    /**
+     * A buffer referencing the source of polyhedron input.
+     */
+    private BufferedReader theBuffer;
+
+    /**
+     * Create a PolyhedronReader using an existing buffer. The buffer is
+     * consumed in read operations. Concurrent buffer reads, from outside a
+     * PolyhedronReader, should be avoided.
+     *
+     * @param aBuffer source buffer
+     */
+    public PolyhedronReader(BufferedReader aBuffer)
+<span class="fc" id="L32">    {</span>
+<span class="fc" id="L33">        this.theBuffer = aBuffer;</span>
+<span class="fc" id="L34">    }</span>
+
+    /**
+     * Create and return a new Polyhedron. This is an object that is one of the
+     * three subtypes, Sphere, Cylinder, or Composite
+     *
+     * @param snr source from which a polyhedron will be read
+     *
+     * @return polyhedron object, or null if an &quot;invalid&quot; polyhedron was read
+     *
+     * @TODO add logic to handle malformed recursive sub-compositeobjects
+     */
+    private Polyhedron createAndRead(final Scanner snr)
+    {
+<span class="fc" id="L48">        Polyhedron ply = null;</span>
+
+<span class="pc bpc" id="L50" title="1 of 2 branches missed.">        if (snr.hasNext()) {</span>
+<span class="fc" id="L51">            final String polyhedronType = snr.next();</span>
+
+<span class="fc" id="L53">            ply = PolyhedronFactory.createPolyhedron(polyhedronType);</span>
+
+<span class="fc bfc" id="L55" title="All 2 branches covered.">            if (ply != null) {</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">                if (ply.isSimple()) {</span>
+<span class="fc" id="L57">                    TraitFromDimensions dimPoly = (TraitFromDimensions) ply;</span>
+<span class="fc" id="L58">                    ply = initFromDimensions(dimPoly, snr);</span>
+<span class="fc" id="L59">                }</span>
+                else {
+<span class="fc" id="L61">                    Composite cmp = (Composite) ply;</span>
+
+<span class="fc" id="L63">                    ply = this.readMultiple(snr, cmp);</span>
+<span class="fc" id="L64">                }</span>
+            }
+            else {
+<span class="fc" id="L67">                snr.nextLine();</span>
+
+<span class="pc bpc" id="L69" title="1 of 2 branches missed.">                if (snr.hasNext()) {</span>
+<span class="nc" id="L70">                    snr.nextLine();</span>
+                }
+            }
+        }
+
+<span class="fc" id="L75">        return ply;</span>
+    }
+
+    /**
+     * Initialize a polyhedron from an array of double values.
+     *
+     * @param dimPoly a polyhedron cast into TraitFromDimensions
+     * @param snr scanner object from which to read
+     *
+     * @return initialized Polyhedron object
+     */
+    private Polyhedron initFromDimensions(TraitFromDimensions dimPoly,
+                                          Scanner snr)
+    {
+<span class="fc" id="L89">        double[] dims = new double[dimPoly.numberOfDimensions()];</span>
+
+<span class="fc bfc" id="L91" title="All 2 branches covered.">        for (int i = 0; i &lt; dims.length; i++) {</span>
+<span class="fc" id="L92">            dims[i] = snr.nextDouble();</span>
+        }
+
+<span class="fc" id="L95">        dimPoly.fromDimensions(dims);</span>
+
+<span class="fc" id="L97">        return (Polyhedron) dimPoly;</span>
+    }
+
+    /**
+     * Read all component polyhedra.
+     *
+     * @param poly intitialized (and empty) composite object
+     *
+     * @param scanner input source
+     *
+     * @return intitialized Composite object downcast as a Polyhedron
+     */
+    private Polyhedron readMultiple(Scanner scanner, Composite poly)
+    {
+<span class="fc" id="L111">        int numPolyhedra = scanner.nextInt();</span>
+
+<span class="fc bfc" id="L113" title="All 2 branches covered.">        for (int i = 0; i &lt; numPolyhedra; i++) {</span>
+<span class="fc" id="L114">            Polyhedron innerPoly = this.createAndRead(scanner);</span>
+
+<span class="fc" id="L116">            poly.add(innerPoly);</span>
+        }
+
+<span class="fc" id="L119">        return poly;</span>
+    }
+
+    /**
+     * Read Polyhedron objects from the input buffer until the buffer is empty
+     * (i.e., exhausted).
+     *
+     * @return list of Polyhedra
+     */
+    public List&lt;Polyhedron&gt; readAll()
+    {
+<span class="fc" id="L130">        List&lt;Polyhedron&gt; polyhedra = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L131">        Scanner          inf       = new Scanner(theBuffer);</span>
+
+<span class="fc bfc" id="L133" title="All 2 branches covered.">        while (inf.hasNext()) {</span>
+<span class="fc" id="L134">            Polyhedron poly = this.createAndRead(inf);</span>
+
+<span class="fc bfc" id="L136" title="All 2 branches covered.">            if (poly != null) {</span>
+<span class="fc" id="L137">                polyhedra.add(poly);</span>
+            }
+<span class="fc" id="L139">        }</span>
+
+<span class="fc" id="L141">        return polyhedra;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

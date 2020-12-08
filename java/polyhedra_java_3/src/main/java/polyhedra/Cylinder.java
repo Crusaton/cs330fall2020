@@ -123,15 +123,23 @@ public class Cylinder
     @Override
     public boolean equals(Object rhs)
     {
-        // This is a placeholder...
-        return false;
+        // This is a placeholder...'
+        if(!(rhs instanceof Cylinder)) {
+            return false;
+        }
+        
+        Cylinder rhsCylinder = (Cylinder) rhs;
+
+        return Point.equalWithinDftThreshold(this.radius, rhsCylinder.radius);
     }
 
     @Override
     public int hashCode()
     {
         // This is a placeholder...
-        return -1;
+        return this.getType().hashCode()
+            + Double.valueOf(this.radius).hashCode()
+            + Double.valueOf(this.height).hashCode();
     }
 
     @Override
@@ -147,12 +155,14 @@ public class Cylinder
     public int numberOfDimensions()
     {
         // Zero... I think the Cylinder has more than zero dimensions.
-        return 0;
+        return 2;
     }
 
     @Override
     public void fromDimensions(double[] theDims)
     {
         // Something is missing...
+        this.radius = theDims[1];
+        this.height = theDims[0];
     }
 }

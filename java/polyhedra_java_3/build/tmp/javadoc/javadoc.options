@@ -1,0 +1,18 @@
+-classpath '/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/classes/java/main:/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/resources/main'
+-d '/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/build/docs/javadoc'
+-doctitle 'polyhedra_java_3 API'
+-notimestamp 
+-quiet 
+-windowtitle 'polyhedra_java_3 API'
+'/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/Composite.java'
+'/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/Cylinder.java'
+'/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/PolyhedronFactory.java'
+'/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/BoundingBox.java'
+'/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/CreatePolyhedra.java'
+'/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/Polyhedron.java'
+'/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/Point.java'
+'/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/TraitFromDimensions.java'
+'/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/package-info.java'
+'/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/io/PolyhedronReader.java'
+'/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/io/package-info.java'
+'/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/main/java/polyhedra/Sphere.java'

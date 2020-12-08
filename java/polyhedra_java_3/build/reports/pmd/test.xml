@@ -1,0 +1,1505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.21.0" timestamp="2020-12-07T19:42:28.633">
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/test/java/polyhedra/TestComposite.java">
+<violation beginline="25" endline="308" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="polyhedra" class="TestComposite" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="39" endline="39" begincolumn="20" endcolumn="25" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="polyhedra" class="TestComposite" variable="sphere" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="40" endline="40" begincolumn="22" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="polyhedra" class="TestComposite" variable="cylinder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="46" endline="46" begincolumn="23" endcolumn="36" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="polyhedra" class="TestComposite" variable="compositeWith2" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="61" endline="78" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="63" endline="63" begincolumn="9" endcolumn="77" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'lowerPoint' could be declared final
+</violation>
+<violation beginline="63" endline="63" begincolumn="28" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="63" endline="63" begincolumn="29" endcolumn="55" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="64" endline="64" begincolumn="9" endcolumn="78" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'upperPoint' could be declared final
+</violation>
+<violation beginline="64" endline="64" begincolumn="28" endcolumn="78" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="64" endline="64" begincolumn="29" endcolumn="55" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="66" endline="66" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="67" endline="67" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="69" endline="69" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="71" endline="71" begincolumn="9" endcolumn="19" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="71" endline="71" begincolumn="9" endcolumn="52" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="71" endline="71" begincolumn="21" endcolumn="51" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="74" endline="74" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="75" endline="75" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="81" endline="112" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="83" endline="83" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testAdd" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'comp1' could be declared final
+</violation>
+<violation beginline="86" endline="86" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="87" endline="87" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="87" endline="87" begincolumn="9" endcolumn="46" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="87" endline="87" begincolumn="20" endcolumn="45" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="89" endline="89" begincolumn="28" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="89" endline="89" begincolumn="29" endcolumn="50" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="90" endline="90" begincolumn="28" endcolumn="73" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="90" endline="90" begincolumn="29" endcolumn="50" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="92" endline="92" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="93" endline="93" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="97" endline="97" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="98" endline="98" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="98" endline="98" begincolumn="9" endcolumn="46" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="98" endline="98" begincolumn="20" endcolumn="45" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="100" endline="100" begincolumn="22" endcolumn="66" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="100" endline="100" begincolumn="23" endcolumn="44" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="101" endline="101" begincolumn="22" endcolumn="67" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="101" endline="101" begincolumn="23" endcolumn="44" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="103" endline="103" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="104" endline="104" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="107" endline="107" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="108" endline="108" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="115" endline="161" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="118" endline="118" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="119" endline="119" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="119" endline="119" begincolumn="9" endcolumn="55" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="119" endline="119" begincolumn="20" endcolumn="54" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="121" endline="121" begincolumn="28" endcolumn="81" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="121" endline="121" begincolumn="29" endcolumn="59" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="122" endline="122" begincolumn="28" endcolumn="82" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="122" endline="122" begincolumn="29" endcolumn="59" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="124" endline="124" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="125" endline="125" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="128" endline="128" begincolumn="9" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'theCopyAsBase' could be declared final
+</violation>
+<violation beginline="129" endline="129" begincolumn="9" endcolumn="60" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'theCopyAsComp' could be declared final
+</violation>
+<violation beginline="131" endline="131" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="131" endline="131" begincolumn="20" endcolumn="39" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="132" endline="132" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="132" endline="132" begincolumn="9" endcolumn="54" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="132" endline="132" begincolumn="20" endcolumn="53" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="132" endline="132" begincolumn="20" endcolumn="53" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="134" endline="134" begincolumn="22" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="134" endline="134" begincolumn="22" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="135" endline="135" begincolumn="22" endcolumn="73" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="135" endline="135" begincolumn="22" endcolumn="73" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="137" endline="137" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="138" endline="138" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="144" endline="144" begincolumn="30" endcolumn="31" rule="ShortVariable" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testClone" variable="it" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like it
+</violation>
+<violation beginline="144" endline="144" begincolumn="9" endcolumn="58" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'it' could be declared final
+</violation>
+<violation beginline="144" endline="144" begincolumn="35" endcolumn="58" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="146" endline="146" begincolumn="9" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'itSphere' could be declared final
+</violation>
+<violation beginline="147" endline="147" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="147" endline="147" begincolumn="20" endcolumn="39" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="149" endline="149" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'itCylinder' could be declared final
+</violation>
+<violation beginline="150" endline="150" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="150" endline="150" begincolumn="20" endcolumn="41" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="151" endline="151" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="151" endline="151" begincolumn="20" endcolumn="41" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="154" endline="154" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="155" endline="155" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="157" endline="157" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="157" endline="157" begincolumn="20" endcolumn="43" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="158" endline="158" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="158" endline="158" begincolumn="20" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="164" endline="200" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="167" endline="167" begincolumn="9" endcolumn="38" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="169" endline="169" begincolumn="9" endcolumn="74" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'scaledSphere' could be declared final
+</violation>
+<violation beginline="170" endline="170" begincolumn="9" endcolumn="82" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'scaledCylinder' could be declared final
+</violation>
+<violation beginline="176" endline="176" begincolumn="9" endcolumn="79" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'lowerPoint' could be declared final
+</violation>
+<violation beginline="176" endline="176" begincolumn="28" endcolumn="79" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="177" endline="177" begincolumn="9" endcolumn="80" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'upperPoint' could be declared final
+</violation>
+<violation beginline="177" endline="177" begincolumn="28" endcolumn="80" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="179" endline="179" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="180" endline="180" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="183" endline="183" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="188" endline="188" begincolumn="30" endcolumn="31" rule="ShortVariable" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testScale" variable="it" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like it
+</violation>
+<violation beginline="188" endline="188" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'it' could be declared final
+</violation>
+<violation beginline="190" endline="190" begincolumn="9" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'itSphere' could be declared final
+</violation>
+<violation beginline="191" endline="191" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="191" endline="191" begincolumn="20" endcolumn="39" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="191" endline="191" begincolumn="50" endcolumn="73" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="193" endline="193" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'itCylinder' could be declared final
+</violation>
+<violation beginline="194" endline="194" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="194" endline="194" begincolumn="20" endcolumn="41" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="194" endline="194" begincolumn="52" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="195" endline="195" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="195" endline="195" begincolumn="20" endcolumn="41" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="195" endline="195" begincolumn="52" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="198" endline="198" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="199" endline="199" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="203" endline="227" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="210" endline="210" begincolumn="9" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testToStringNoScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'actualOutput' could be declared final
+</violation>
+<violation beginline="212" endline="212" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="213" endline="213" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="214" endline="214" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="215" endline="215" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="217" endline="217" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="218" endline="218" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="219" endline="219" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="220" endline="220" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="222" endline="222" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="223" endline="223" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="224" endline="224" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="225" endline="225" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="226" endline="226" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringNoScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="230" endline="261" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="232" endline="232" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testToStringAfterScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'compositeWith2' could be declared final
+</violation>
+<violation beginline="244" endline="244" begincolumn="9" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testToStringAfterScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'actualOutput' could be declared final
+</violation>
+<violation beginline="246" endline="246" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="247" endline="247" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="248" endline="248" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="249" endline="249" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="251" endline="251" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="252" endline="252" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="253" endline="253" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="254" endline="254" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="256" endline="256" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="257" endline="257" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="258" endline="258" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="259" endline="259" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="260" endline="260" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="264" endline="282" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="268" endline="268" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testEquals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'compositeWith3' could be declared final
+</violation>
+<violation beginline="274" endline="274" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="275" endline="275" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="276" endline="276" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="279" endline="279" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="280" endline="280" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="281" endline="281" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="287" endline="287" begincolumn="9" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testEqualsDifferentClass" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'str1' could be declared final
+</violation>
+<violation beginline="290" endline="290" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testEqualsDifferentClass" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="294" endline="307" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testHashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="298" endline="298" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestComposite" method="testHashCode" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'compositeWith3' could be declared final
+</violation>
+<violation beginline="304" endline="304" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testHashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="305" endline="305" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testHashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="306" endline="306" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestComposite" method="testHashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/test/java/polyhedra/TestCreatePolyhedra.java">
+<violation beginline="1" endline="118" begincolumn="1" endcolumn="1" rule="TooManyStaticImports" ruleset="Code Style" package="polyhedra" class="TestCreatePolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+<violation beginline="38" endline="117" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="polyhedra" class="TestCreatePolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="43" endline="43" begincolumn="22" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="polyhedra" class="TestCreatePolyhedra" variable="complexList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="43" endline="43" begincolumn="5" endcolumn="33" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="polyhedra" class="TestCreatePolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the complexList field if you want a default access modifier
+</violation>
+<violation beginline="43" endline="43" begincolumn="5" endcolumn="33" rule="DefaultPackage" ruleset="Code Style" package="polyhedra" class="TestCreatePolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="67" endline="77" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testCreateDivider" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="69" endline="69" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testCreateDivider" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="70" endline="70" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testCreateDivider" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="71" endline="71" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testCreateDivider" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="72" endline="72" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testCreateDivider" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="73" endline="73" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testCreateDivider" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="74" endline="74" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testCreateDivider" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="75" endline="75" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testCreateDivider" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="76" endline="76" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testCreateDivider" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="82" endline="82" begincolumn="9" endcolumn="74" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCreatePolyhedra" method="testDuplicateAndScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'scaledComplex' could be declared final
+</violation>
+<violation beginline="85" endline="85" begincolumn="14" endcolumn="28" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCreatePolyhedra" method="testDuplicateAndScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'poly' could be declared final
+</violation>
+<violation beginline="90" endline="90" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testDuplicateAndScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="94" endline="116" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testPrintPolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="96" endline="96" begincolumn="21" endcolumn="31" rule="CloseResource" ruleset="Error Prone" package="polyhedra" class="TestCreatePolyhedra" method="testPrintPolyhedra" variable="originalOut" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this PrintStream object are closed after use
+</violation>
+<violation beginline="96" endline="96" begincolumn="9" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCreatePolyhedra" method="testPrintPolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'originalOut' could be declared final
+</violation>
+<violation beginline="97" endline="97" begincolumn="9" endcolumn="75" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCreatePolyhedra" method="testPrintPolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'testStandardOut' could be declared final
+</violation>
+<violation beginline="107" endline="107" begincolumn="9" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCreatePolyhedra" method="testPrintPolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'resultStr' could be declared final
+</violation>
+<violation beginline="109" endline="109" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testPrintPolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="111" endline="113" begincolumn="9" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCreatePolyhedra" method="testPrintPolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'complexAsStrings' could be declared final
+</violation>
+<violation beginline="111" endline="113" begincolumn="41" endcolumn="56" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCreatePolyhedra" method="testPrintPolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="111" endline="113" begincolumn="41" endcolumn="56" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCreatePolyhedra" method="testPrintPolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="111" endline="113" begincolumn="41" endcolumn="56" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCreatePolyhedra" method="testPrintPolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="115" endline="115" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCreatePolyhedra" method="testPrintPolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/test/java/polyhedra/TestCylinder.java">
+<violation beginline="24" endline="294" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="polyhedra" class="TestCylinder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="24" endline="294" begincolumn="27" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="polyhedra" class="TestCylinder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#toomanymethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="26" endline="26" begincolumn="14" endcolumn="28" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="polyhedra" class="TestCylinder" variable="defaultCylinder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="5" endcolumn="29" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="polyhedra" class="TestCylinder" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the defaultCylinder field if you want a default access modifier
+</violation>
+<violation beginline="26" endline="26" begincolumn="5" endcolumn="29" rule="DefaultPackage" ruleset="Code Style" package="polyhedra" class="TestCylinder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="35" endline="53" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="37" endline="37" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="38" endline="38" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="40" endline="40" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="43" endline="43" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="9" endcolumn="78" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="23" endcolumn="78" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="44" endline="44" begincolumn="24" endcolumn="55" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="46" endline="46" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="49" endline="49" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="50" endline="50" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="56" endline="76" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="58" endline="58" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testNonDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="60" endline="60" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="61" endline="61" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="63" endline="63" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="66" endline="66" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testNonDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="67" endline="67" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testNonDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="67" endline="67" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="69" endline="69" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="72" endline="72" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="73" endline="73" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="79" endline="101" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="81" endline="81" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testSetRadius" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="85" endline="85" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="86" endline="86" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="88" endline="88" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="91" endline="91" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testSetRadius" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="92" endline="92" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testSetRadius" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="92" endline="92" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="94" endline="94" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="97" endline="97" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="98" endline="98" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="104" endline="124" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetHeight" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="106" endline="106" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testSetHeight" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="110" endline="110" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetHeight" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="111" endline="111" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetHeight" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="113" endline="113" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetHeight" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="116" endline="116" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testSetHeight" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="117" endline="117" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testSetHeight" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="117" endline="117" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testSetHeight" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="120" endline="120" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetHeight" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="121" endline="121" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetHeight" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="123" endline="123" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testSetHeight" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="127" endline="152" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="129" endline="129" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="131" endline="131" begincolumn="9" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cpy' could be declared final
+</violation>
+<violation beginline="133" endline="133" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="133" endline="133" begincolumn="20" endcolumn="34" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="134" endline="134" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="134" endline="134" begincolumn="20" endcolumn="36" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="136" endline="136" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="136" endline="136" begincolumn="20" endcolumn="34" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="139" endline="139" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="140" endline="140" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="140" endline="140" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="140" endline="140" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="142" endline="142" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="145" endline="145" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="146" endline="146" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="148" endline="148" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="148" endline="148" begincolumn="20" endcolumn="33" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="149" endline="149" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="149" endline="149" begincolumn="20" endcolumn="34" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="155" endline="177" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="157" endline="157" begincolumn="9" endcolumn="37" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testFromDimensions" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="161" endline="161" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="162" endline="162" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="164" endline="164" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="167" endline="167" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testFromDimensions" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="168" endline="168" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testFromDimensions" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="168" endline="168" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="170" endline="170" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="173" endline="173" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="174" endline="174" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="180" endline="202" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="182" endline="182" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="186" endline="186" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="187" endline="187" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="189" endline="189" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="192" endline="192" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="193" endline="193" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="193" endline="193" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="195" endline="195" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="198" endline="198" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="199" endline="199" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="205" endline="217" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="207" endline="207" begincolumn="9" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testToStringDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="209" endline="209" begincolumn="22" endcolumn="35" rule="UnusedLocalVariable" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringDefaultConstructor" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'expectedOutput'.
+</violation>
+<violation beginline="209" endline="209" begincolumn="9" endcolumn="83" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testToStringDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="209" endline="217" begincolumn="22" endcolumn="83" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="polyhedra" class="TestCylinder" method="testToStringDefaultConstructor" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'expectedOutput' (lines '209'-'217').
+</violation>
+<violation beginline="210" endline="210" begincolumn="37" endcolumn="50" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestCylinder" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="213" endline="213" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="214" endline="214" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="214" endline="214" begincolumn="50" endcolumn="67" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="215" endline="215" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="216" endline="216" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="220" endline="232" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="222" endline="222" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testToStringConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="224" endline="224" begincolumn="22" endcolumn="35" rule="UnusedLocalVariable" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringConstructor" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'expectedOutput'.
+</violation>
+<violation beginline="224" endline="224" begincolumn="9" endcolumn="83" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testToStringConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="224" endline="232" begincolumn="22" endcolumn="83" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="polyhedra" class="TestCylinder" method="testToStringConstructor" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'expectedOutput' (lines '224'-'232').
+</violation>
+<violation beginline="228" endline="228" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="229" endline="229" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="229" endline="229" begincolumn="50" endcolumn="67" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testToStringConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="230" endline="230" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="231" endline="231" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="235" endline="248" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="237" endline="237" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testToStringAfterScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="240" endline="240" begincolumn="22" endcolumn="35" rule="UnusedLocalVariable" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringAfterScale" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'expectedOutput'.
+</violation>
+<violation beginline="240" endline="240" begincolumn="9" endcolumn="87" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testToStringAfterScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="240" endline="248" begincolumn="22" endcolumn="87" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="polyhedra" class="TestCylinder" method="testToStringAfterScale" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'expectedOutput' (lines '240'-'248').
+</violation>
+<violation beginline="244" endline="244" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="245" endline="245" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="245" endline="245" begincolumn="50" endcolumn="70" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="246" endline="246" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="247" endline="247" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="251" endline="268" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="255" endline="255" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testEquals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl1' could be declared final
+</violation>
+<violation beginline="256" endline="256" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testEquals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl2' could be declared final
+</violation>
+<violation beginline="257" endline="257" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testEquals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl4' could be declared final
+</violation>
+<violation beginline="260" endline="260" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="261" endline="261" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="262" endline="262" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="265" endline="265" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="266" endline="266" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="267" endline="267" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="273" endline="273" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testEqualsDifferentClass" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl1' could be declared final
+</violation>
+<violation beginline="274" endline="274" begincolumn="9" endcolumn="32" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testEqualsDifferentClass" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'str1' could be declared final
+</violation>
+<violation beginline="277" endline="277" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testEqualsDifferentClass" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="281" endline="293" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testHashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="285" endline="285" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testHashCode" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl1' could be declared final
+</violation>
+<violation beginline="286" endline="286" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testHashCode" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl2' could be declared final
+</violation>
+<violation beginline="287" endline="287" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestCylinder" method="testHashCode" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl4' could be declared final
+</violation>
+<violation beginline="290" endline="290" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testHashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="291" endline="291" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testHashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="292" endline="292" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestCylinder" method="testHashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/test/java/polyhedra/TestSphere.java">
+<violation beginline="24" endline="260" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="polyhedra" class="TestSphere" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="24" endline="260" begincolumn="25" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="polyhedra" class="TestSphere" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#toomanymethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="26" endline="26" begincolumn="12" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="polyhedra" class="TestSphere" variable="defaultSphere" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="5" endcolumn="25" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="polyhedra" class="TestSphere" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the defaultSphere field if you want a default access modifier
+</violation>
+<violation beginline="26" endline="26" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" package="polyhedra" class="TestSphere" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="35" endline="51" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="37" endline="37" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="38" endline="38" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="41" endline="41" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="9" endcolumn="76" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="23" endcolumn="76" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestSphere" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="42" endline="42" begincolumn="24" endcolumn="53" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="44" endline="44" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="47" endline="47" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="48" endline="48" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="54" endline="72" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="56" endline="56" begincolumn="9" endcolumn="34" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testNonDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="58" endline="58" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="59" endline="59" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="62" endline="62" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testNonDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="63" endline="63" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testNonDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="63" endline="63" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestSphere" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="65" endline="65" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="68" endline="68" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="69" endline="69" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testNonDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="75" endline="96" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="77" endline="77" begincolumn="9" endcolumn="34" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testSetRadius" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="82" endline="82" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="83" endline="83" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="86" endline="86" begincolumn="9" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testSetRadius" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="87" endline="87" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testSetRadius" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="87" endline="87" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestSphere" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="89" endline="89" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="92" endline="92" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="93" endline="93" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testSetRadius" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="99" endline="122" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="101" endline="101" begincolumn="9" endcolumn="34" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="103" endline="103" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cpy' could be declared final
+</violation>
+<violation beginline="105" endline="105" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="105" endline="105" begincolumn="20" endcolumn="34" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="106" endline="106" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="106" endline="106" begincolumn="20" endcolumn="36" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="109" endline="109" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="110" endline="110" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testClone" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="110" endline="110" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="110" endline="110" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="112" endline="112" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="115" endline="115" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="116" endline="116" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="118" endline="118" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="118" endline="118" begincolumn="20" endcolumn="33" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="119" endline="119" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="119" endline="119" begincolumn="20" endcolumn="34" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestSphere" method="testClone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="125" endline="145" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="127" endline="127" begincolumn="9" endcolumn="33" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testFromDimensions" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="131" endline="131" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="132" endline="132" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="135" endline="135" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testFromDimensions" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="136" endline="136" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testFromDimensions" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="136" endline="136" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestSphere" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="138" endline="138" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="141" endline="141" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="142" endline="142" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testFromDimensions" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="148" endline="168" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="150" endline="150" begincolumn="9" endcolumn="34" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="154" endline="154" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="155" endline="155" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="158" endline="158" begincolumn="9" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedPoint' could be declared final
+</violation>
+<violation beginline="159" endline="159" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'point' could be declared final
+</violation>
+<violation beginline="159" endline="159" begincolumn="23" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestSphere" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="161" endline="161" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="164" endline="164" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="165" endline="165" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="171" endline="183" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="173" endline="173" begincolumn="9" endcolumn="34" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testToStringDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="175" endline="175" begincolumn="22" endcolumn="35" rule="UnusedLocalVariable" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringDefaultConstructor" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'expectedOutput'.
+</violation>
+<violation beginline="175" endline="175" begincolumn="9" endcolumn="71" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testToStringDefaultConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="175" endline="183" begincolumn="22" endcolumn="71" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="polyhedra" class="TestSphere" method="testToStringDefaultConstructor" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'expectedOutput' (lines '175'-'183').
+</violation>
+<violation beginline="176" endline="176" begincolumn="37" endcolumn="50" rule="LawOfDemeter" ruleset="Design" package="polyhedra" class="TestSphere" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="179" endline="179" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="180" endline="180" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="180" endline="180" begincolumn="50" endcolumn="67" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="181" endline="181" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="182" endline="182" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringDefaultConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="186" endline="198" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="188" endline="188" begincolumn="9" endcolumn="34" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testToStringConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="190" endline="190" begincolumn="22" endcolumn="35" rule="UnusedLocalVariable" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringConstructor" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'expectedOutput'.
+</violation>
+<violation beginline="190" endline="190" begincolumn="9" endcolumn="71" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testToStringConstructor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="190" endline="198" begincolumn="22" endcolumn="71" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="polyhedra" class="TestSphere" method="testToStringConstructor" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'expectedOutput' (lines '190'-'198').
+</violation>
+<violation beginline="194" endline="194" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="195" endline="195" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="195" endline="195" begincolumn="50" endcolumn="67" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testToStringConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="196" endline="196" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="197" endline="197" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringConstructor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="201" endline="214" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="203" endline="203" begincolumn="9" endcolumn="34" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testToStringAfterScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'cyl' could be declared final
+</violation>
+<violation beginline="206" endline="206" begincolumn="22" endcolumn="35" rule="UnusedLocalVariable" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringAfterScale" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'expectedOutput'.
+</violation>
+<violation beginline="206" endline="206" begincolumn="9" endcolumn="85" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testToStringAfterScale" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="206" endline="214" begincolumn="22" endcolumn="85" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="polyhedra" class="TestSphere" method="testToStringAfterScale" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'expectedOutput' (lines '206'-'214').
+</violation>
+<violation beginline="210" endline="210" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="211" endline="211" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="211" endline="211" begincolumn="50" endcolumn="70" rule="UselessParentheses" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="212" endline="212" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="213" endline="213" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testToStringAfterScale" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="217" endline="234" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="221" endline="221" begincolumn="9" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testEquals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'sph1' could be declared final
+</violation>
+<violation beginline="222" endline="222" begincolumn="9" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testEquals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'sph2' could be declared final
+</violation>
+<violation beginline="223" endline="223" begincolumn="9" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testEquals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'sph4' could be declared final
+</violation>
+<violation beginline="226" endline="226" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="227" endline="227" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="228" endline="228" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="231" endline="231" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="232" endline="232" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="233" endline="233" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="239" endline="239" begincolumn="9" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testEqualsDifferentClass" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'sph1' could be declared final
+</violation>
+<violation beginline="240" endline="240" begincolumn="9" endcolumn="32" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testEqualsDifferentClass" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'str1' could be declared final
+</violation>
+<violation beginline="243" endline="243" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testEqualsDifferentClass" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="247" endline="259" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testHashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="251" endline="251" begincolumn="9" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testHashCode" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'sph1' could be declared final
+</violation>
+<violation beginline="252" endline="252" begincolumn="9" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testHashCode" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'sph2' could be declared final
+</violation>
+<violation beginline="253" endline="253" begincolumn="9" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra" class="TestSphere" method="testHashCode" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'sph4' could be declared final
+</violation>
+<violation beginline="256" endline="256" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testHashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="257" endline="257" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testHashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="258" endline="258" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra" class="TestSphere" method="testHashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+</file>
+<file name="/home/crusaton/spaghetticode/school/cs330fall2020/java/polyhedra_java_3/src/test/java/polyhedra/io/TestPolyhedronReader.java">
+<violation beginline="36" endline="187" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="41" endline="41" begincolumn="32" endcolumn="42" rule="FieldNamingConventions" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" variable="simpleInput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The public constant name 'simpleInput' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="41" endline="41" begincolumn="32" endcolumn="42" rule="VariableNamingConventions" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" variable="simpleInput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables that are final and static should be all capitals, 'simpleInput' is not all capitals.
+</violation>
+<violation beginline="44" endline="44" begincolumn="46" endcolumn="61" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="polyhedra.io" class="TestPolyhedronReader" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;cylinder 2 3\n&quot; appears 4 times in this file; the first occurrence is on line 44
+</violation>
+<violation beginline="50" endline="50" begincolumn="32" endcolumn="51" rule="LongVariable" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" variable="simpleInputWithEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like simpleInputWithEmpty
+</violation>
+<violation beginline="50" endline="50" begincolumn="32" endcolumn="51" rule="FieldNamingConventions" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" variable="simpleInputWithEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The public constant name 'simpleInputWithEmpty' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="50" endline="50" begincolumn="32" endcolumn="51" rule="VariableNamingConventions" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" variable="simpleInputWithEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables that are final and static should be all capitals, 'simpleInputWithEmpty' is not all capitals.
+</violation>
+<violation beginline="63" endline="63" begincolumn="32" endcolumn="43" rule="FieldNamingConventions" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" variable="complexInput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The public constant name 'complexInput' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="63" endline="63" begincolumn="32" endcolumn="43" rule="VariableNamingConventions" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" variable="complexInput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables that are final and static should be all capitals, 'complexInput' is not all capitals.
+</violation>
+<violation beginline="66" endline="66" begincolumn="47" endcolumn="62" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="polyhedra.io" class="TestPolyhedronReader" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;    sphere 5\n&quot; appears 4 times in this file; the first occurrence is on line 66
+</violation>
+<violation beginline="78" endline="78" begincolumn="32" endcolumn="52" rule="LongVariable" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" variable="complexInputWithEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like complexInputWithEmpty
+</violation>
+<violation beginline="78" endline="78" begincolumn="32" endcolumn="52" rule="FieldNamingConventions" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" variable="complexInputWithEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The public constant name 'complexInputWithEmpty' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="78" endline="78" begincolumn="32" endcolumn="52" rule="VariableNamingConventions" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" variable="complexInputWithEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables that are final and static should be all capitals, 'complexInputWithEmpty' is not all capitals.
+</violation>
+<violation beginline="94" endline="94" begincolumn="22" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="polyhedra.io" class="TestPolyhedronReader" variable="simpleList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="94" endline="94" begincolumn="5" endcolumn="32" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the simpleList field if you want a default access modifier
+</violation>
+<violation beginline="94" endline="94" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="99" endline="99" begincolumn="22" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="polyhedra.io" class="TestPolyhedronReader" variable="complexList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="99" endline="99" begincolumn="5" endcolumn="33" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the complexList field if you want a default access modifier
+</violation>
+<violation beginline="99" endline="99" begincolumn="5" endcolumn="33" rule="DefaultPackage" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="132" endline="132" begincolumn="24" endcolumn="30" rule="CloseResource" ruleset="Error Prone" package="polyhedra.io" class="TestPolyhedronReader" method="testReadInvalidPolyhedra" variable="aReader" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this BufferedReader object are closed after use
+</violation>
+<violation beginline="132" endline="132" begincolumn="9" endcolumn="86" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadInvalidPolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'aReader' could be declared final
+</violation>
+<violation beginline="133" endline="133" begincolumn="9" endcolumn="68" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadInvalidPolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'aPolyReader' could be declared final
+</violation>
+<violation beginline="135" endline="135" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadInvalidPolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'actualList' could be declared final
+</violation>
+<violation beginline="137" endline="137" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra.io" class="TestPolyhedronReader" method="testReadInvalidPolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="137" endline="137" begincolumn="20" endcolumn="36" rule="LawOfDemeter" ruleset="Design" package="polyhedra.io" class="TestPolyhedronReader" method="testReadInvalidPolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="143" endline="143" begincolumn="24" endcolumn="30" rule="CloseResource" ruleset="Error Prone" package="polyhedra.io" class="TestPolyhedronReader" method="testReadSimplePolyhedra" variable="aReader" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this BufferedReader object are closed after use
+</violation>
+<violation beginline="143" endline="143" begincolumn="9" endcolumn="82" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadSimplePolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'aReader' could be declared final
+</violation>
+<violation beginline="144" endline="144" begincolumn="9" endcolumn="68" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadSimplePolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'aPolyReader' could be declared final
+</violation>
+<violation beginline="146" endline="146" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadSimplePolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'actualList' could be declared final
+</violation>
+<violation beginline="149" endline="149" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra.io" class="TestPolyhedronReader" method="testReadSimplePolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="155" endline="155" begincolumn="24" endcolumn="30" rule="CloseResource" ruleset="Error Prone" package="polyhedra.io" class="TestPolyhedronReader" method="testReadSimplePolyhedraWithEmptyLines" variable="aReader" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this BufferedReader object are closed after use
+</violation>
+<violation beginline="155" endline="155" begincolumn="9" endcolumn="91" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadSimplePolyhedraWithEmptyLines" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'aReader' could be declared final
+</violation>
+<violation beginline="156" endline="156" begincolumn="9" endcolumn="68" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadSimplePolyhedraWithEmptyLines" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'aPolyReader' could be declared final
+</violation>
+<violation beginline="158" endline="158" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadSimplePolyhedraWithEmptyLines" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'actualList' could be declared final
+</violation>
+<violation beginline="161" endline="161" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra.io" class="TestPolyhedronReader" method="testReadSimplePolyhedraWithEmptyLines" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="167" endline="167" begincolumn="24" endcolumn="30" rule="CloseResource" ruleset="Error Prone" package="polyhedra.io" class="TestPolyhedronReader" method="testReadComplexPolyhedra" variable="aReader" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this BufferedReader object are closed after use
+</violation>
+<violation beginline="167" endline="167" begincolumn="9" endcolumn="83" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadComplexPolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'aReader' could be declared final
+</violation>
+<violation beginline="168" endline="168" begincolumn="9" endcolumn="68" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadComplexPolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'aPolyReader' could be declared final
+</violation>
+<violation beginline="170" endline="170" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadComplexPolyhedra" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'actualList' could be declared final
+</violation>
+<violation beginline="173" endline="173" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra.io" class="TestPolyhedronReader" method="testReadComplexPolyhedra" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="179" endline="179" begincolumn="24" endcolumn="30" rule="CloseResource" ruleset="Error Prone" package="polyhedra.io" class="TestPolyhedronReader" method="testReadComplexPolyhedraWithEmptyLines" variable="aReader" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this BufferedReader object are closed after use
+</violation>
+<violation beginline="179" endline="179" begincolumn="9" endcolumn="92" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadComplexPolyhedraWithEmptyLines" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'aReader' could be declared final
+</violation>
+<violation beginline="180" endline="180" begincolumn="9" endcolumn="68" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadComplexPolyhedraWithEmptyLines" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'aPolyReader' could be declared final
+</violation>
+<violation beginline="182" endline="182" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="polyhedra.io" class="TestPolyhedronReader" method="testReadComplexPolyhedraWithEmptyLines" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'actualList' could be declared final
+</violation>
+<violation beginline="185" endline="185" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="polyhedra.io" class="TestPolyhedronReader" method="testReadComplexPolyhedraWithEmptyLines" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>

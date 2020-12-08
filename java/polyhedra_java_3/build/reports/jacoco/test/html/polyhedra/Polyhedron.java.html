@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Polyhedron.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">polyhedra_java_3</a> &gt; <a href="index.source.html" class="el_package">polyhedra</a> &gt; <span class="el_source">Polyhedron.java</span></div><h1>Polyhedron.java</h1><pre class="source lang-java linenums">package polyhedra;
+
+/**
+ * Polyhedron Interface.
+ * &lt;p&gt;
+ * This should really be split into multiple interfaces using bounded generics.
+ */
+public interface Polyhedron extends Cloneable
+{
+    /**
+     * Retrieve the polyhedron name.
+     *
+     * @return name
+     */
+    String getType();
+
+    /**
+     * Retrieve the bounding box.
+     *
+     * @return current bounding box
+     */
+    BoundingBox getBoundingBox();
+
+    /**
+     * Apply a geometric scaling operation.
+     *
+     * @param scalingFactor scaling factor that is greater than or equal to 1
+     */
+    void scale(double scalingFactor);
+
+    /**
+     * Clone a Polyhedron and minimize casting.
+     *
+     * @return identical (deep) copy of current polyhedron
+     */
+    Polyhedron clone();
+
+    /**
+     * A helper function to clone and scale a Polyhedron.
+     *
+     * @param sFactor scaling factor
+     *
+     * @return scaled copy of the original polyhedron
+     */
+    default Polyhedron cloneAndScale(final double sFactor)
+    {
+<span class="fc" id="L47">        Polyhedron copy = this.clone();</span>
+<span class="fc" id="L48">        copy.scale(sFactor);</span>
+
+<span class="fc" id="L50">        return copy;</span>
+    }
+
+    /**
+     * This is a helper function to generate the String representation of
+     * the type and bounding box.
+     *
+     * @return type-bounding-box string in the form
+     *     {@code &quot;[{type:}] -&gt; {boundingBox:}&quot;}
+     */
+    default String toStringHelper()
+    {
+<span class="fc" id="L62">        return String.format(&quot;[%s] %s -&gt; &quot;,</span>
+<span class="fc" id="L63">                             this.getType(),</span>
+<span class="fc" id="L64">                             this.getBoundingBox());</span>
+    }
+
+    /**
+     * Specify whether a Polyhedron is simple or complex (i.e., defined by a
+     * combination of sub-polyhedra).
+     *
+     * @return true if the polyhedron is complex, and false if the polyhedron
+     *     is simple.
+     *
+     */
+    default boolean isComplex()
+    {
+<span class="fc" id="L77">        return false;</span>
+    }
+
+    /**
+     * Specify whether a Polyhedron is simple or complex (i.e., defined by a
+     * combination of sub-polyhedra).
+     *
+     * @return false if the polyhedron is complex, and true if the polyhedron
+     *     is simple.
+     *
+     */
+    default boolean isSimple()
+    {
+<span class="fc" id="L90">        return true;</span>
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
